@@ -2573,7 +2573,7 @@ class Wconfig(SimpleGladeApp):
         self.addParam(_(u"Paste on right click"), "conf.PASTE_ON_RIGHT_CLICK", bool)
         self.addParam(_(u"Copy selection to clipboard"), "conf.AUTO_COPY_SELECTION", bool)
         self.addParam(_("Confirm on close console"), "conf.CONFIRM_ON_CLOSE_TAB", bool)
-        self.addParam(_("Close console"), "conf.AUTO_CLOSE_TAB", list, [_("Nunca"), _("Siempre"), _(u"Sólo si no hay errores")])
+        self.addParam(_("Close console"), "conf.AUTO_CLOSE_TAB", list, [_("Never"), _("Always"), _(u"Only on clean exit")])
         self.addParam(_("Confirm on exit"), "conf.CONFIRM_ON_EXIT", bool)  
         self.addParam(_("Check updates"), "conf.CHECK_UPDATES", bool)
         self.addParam(_(u"Hide donate button"), "conf.HIDE_DONATE", bool)
