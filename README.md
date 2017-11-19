@@ -37,8 +37,8 @@ python gnome_connection_manager.py
 ```
 
 If you want to run the application from menu/launcher you can create .desktop file in your 
-/home/USERNAME/.local/share/applications directory. Assuming you placed gnome-connection-manager source in directory
-/home/USERNAME/.gnome-connection-manager/ your .desktop file could look like this:
+~/.local/share/applications directory. Assuming you placed gnome-connection-manager source in directory
+~/.gnome-connection-manager/ your .desktop file could look like this:
 
 ```text
 [Desktop Entry]
@@ -47,16 +47,14 @@ Encoding=UTF-8
 Name=Gnome Connection Manager
 Comment=A simple ssh connection manager for gnome
 GenericName=Connection Manager
-Exec=/home/USERNAME/.gnome-connection-manager/gnome_connection_manager.py
+Exec=~/.gnome-connection-manager/gnome_connection_manager.py
 Terminal=false
 Type=Application
-Icon=/home/USERNAME/.gnome-connection-manager/icon.png
+Icon=~/.gnome-connection-manager/icon.png
 Categories=GTK;GNOME;Network;
 ```
 
 Replace USERNAME in examples above with your username.
 
 # Note about the author
-The original author of GCM is Renzo Bertuzzi (kuthulu@gmail.com) and all credit goes to him. I really liked the 
-application and decided to fix some bugs and add features that I need in everyday use. If you find my fork of GCM 
-useful and would like to see some new features added don't hesitate to contact me at: matko.jun@gmail.com
+This is a fork of work done by Matko Jun. The original author of GCM is Renzo Bertuzzi (kuthulu@gmail.com).
