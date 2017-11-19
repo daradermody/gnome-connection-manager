@@ -28,8 +28,8 @@
 # - soporte proxy socks/http para ssh
 # - cluster mode: would be nice to have a drop-down list on the cluster button and once selected \"the text to send to hosts box\" should be activated on the right of the cluster button. The box should stay on the toolbar and not over the terminal window
 # - hide chars** in cluster mode (un checkbox para mostrar/ocultar entrada)
-# - seleccionar varios hosts y conectarse
-# - seleccionar varios hosts y editarlos
+# - seleccionar varios hosts y Connectse
+# - seleccionar varios hosts y Editlos
 # - permitir establecer colores a nivel de grupos
 # - permitir cambiar nombre de grupo
 # - overwrite colors (like putty)
@@ -43,7 +43,7 @@
 # v1.1.0 - Bugfix: public key field was not saved (thanks to Benoît Georgelin for reporting the bug)
 #        - Bugfix: bug in AES library resulted in blank passwords randomly being replaced by some characters (thanks to Boyan Peychev for reporting the bug)
 #        - Bugfix: drag and release tab on the same notebook caused tab to be closed
-#        - Bugfix: Estado de nodos expandidos/contraidos se revertia a un estado anterior al editar por segunda vez un host
+#        - Bugfix: Estado de nodos expandidos/contraidos se revertia a un estado anterior al Edit por segunda vez un host
 #        - Bugfix: Cluster window had to be resized to show the text area in some setups
 #        - Bugfix: Blank lines in commands were removed when restarting application (thanks to Nicholas O'Neill for reporting the bug)
 #        - Se agrega traducción a koreano (thanks to Jong Hoon Lee)
@@ -61,7 +61,7 @@
 #        - Se implementa AES-256 para encriptar claves
 #        - Se agrega opcion para pasar parametros adicionales a la linea de comando (ssh/telnet)
 #        - Se agrega opcion para auto cerrar tab (nunca, siempre, solo si no hay errores) cuando se finaliza la sesion
-#        - Se agrega menu con opcion para ocultar toolbar y panel de servidores
+#        - Se agrega menu con opcion para ocultar toolbar y panel de Servers
 #        - Se agrega soporte para compression ssh (gracias a Boaman Surebun por la implementacion)
 #        - Se agrega configuracion en host para sequencia de teclas Backspace y Delete
 #
@@ -86,7 +86,7 @@
 #        - Bugfix: el modo cluster no muestra los titulos correctos de las consolas cuando han sido renombradas
 #        - Se agrega opción de clonar consola
 #        - Archivo de configuración ahora se guarda al realizar cambios (antes se guardaba al salir de la aplicacion)
-#        - Se agrega opción de tener subgrupos, al editar un host se debe usar el formato grupo/subgrupo/subgrupo para el nombre de grupo
+#        - Se agrega opción de tener subgrupos, al Edit un host se debe usar el formato grupo/subgrupo/subgrupo para el nombre de grupo
 #
 # v0.9.4 - Bugfix: Dejar el foco siempre en la nueva consola
 #        - Bugfix: Shortcut para console_previous se revertia a ctrl+shift+left 
@@ -97,24 +97,24 @@
 #        - Bugfix: se quita atajo CTRL+QUIT para salir de la aplicacion.
 #        - Se agrega traducción a ruso (gracias a Denis Fokin)
 #        - Se agrega traducción a portugues (gracias a Ericson Alexandre S.)
-#        - Se agrega menu contextual "copiar y pegar"
-#        - Se agrega shortcut para reconectar 
+#        - Se agrega menu contextual "copiar y Paste"
+#        - Se agrega shortcut para reConnect 
 #        - Revisar si expect esta instalado al iniciar
 #        - Permitir conexiones locales al guardar un host (ssh, telnet, local)
 #
 # v0.9.2 - Bugfix: En algunos casos no se guardaban los passwords
-#        - Bugfix: Al conectarse a traves de una sesion remota (nomachine, X11) y abrir gcm se limpiaban los passwords
+#        - Bugfix: Al Connectse a traves de una sesion remota (nomachine, X11) y Open gcm se limpiaban los passwords
 #        - Se agrega traducción a polaco (gracias a Pawel)
 #
 # v0.9.1 - Bugfix: Se corrigen algunos textos en frances
-#        - Bugfix: Se corrige bug al importar servidores
-#        - Bugfix: opcion de reconectar desaparece para las demás consolas luego de reconectar a una consola
-#        - Se agrega opcion de cerrar consola con boton central del mouse sin pedir confirmacion
+#        - Bugfix: Se corrige bug al importar Servers
+#        - Bugfix: opcion de reConnect desaparece para las demás consolas luego de reConnect a una consola
+#        - Se agrega opcion de Close console con boton central del mouse sin pedir confirmacion
 #
 # v0.9.0 - Se agrega opcion de copiar texto seleccionado automaticamente al porta papeles
 #        - Se agrega menu para duplicar host
 #        - Se agrega modo cluster (permite enviar mismo comando a varios hosts a la vez)
-#        - Se agrega menu para reabrir una sesion cerrada
+#        - Se agrega menu para reOpen una sesion cerrada
 #        - menu contextual en consola para enviar los comandos predefinidos
 #
 # v0.8.0 - Bugfix: ancho/alto incorrecto al dividir consola horizontal/vertical
@@ -125,7 +125,7 @@
 #        - cambiar font de consola
 #        - Permitir ocultar boton para donar
 #
-# v0.7.1 - Bugfix: al cerrar consola con shortcut se mantenia abierta la sesion ssh
+# v0.7.1 - Bugfix: al Close console con shortcut se mantenia abierta la sesion ssh
 #        - Bugfix: importar servers arrojaba mensaje "Archivo invalido"
 #
 # v0.7.0 - Se agrega menu contextual "copiar direccion" del host
@@ -133,24 +133,24 @@
 #        - Se agrega colores configurables por host
 #        - Se agrega opción de renombrar tabs de consola
 #        - Se agrega traducción a francés (gracias a William M.)
-#        - Se agrega shortcut para cerrar consola
+#        - Se agrega shortcut para Close console
 #
 # v0.6.1 - Se agrega shortcuts para cambiar entre consolas (izq, der, y 01 a 09)
-#        - Correción de bug: no se podia editar un shortcut predefinido
+#        - Correción de bug: no se podia Edit un shortcut predefinido
 #
-# v0.6.0 - Se agrega opción para guardar buffer en archivo
+# v0.6.0 - Se agrega opción para Save buffer to file
 #        - Se agrega buscador
-#        - Boton para abrir consola local
+#        - Boton para Open consola local
 #        - ejecutar comando luego del login
 #        - guardar estado (abiertos/cerrados) de folders y posicion del panel
-#        - importar/exportar lista de servidores
-#        - menu contextual en grupos y servidores (expandir/contraer todo, editar host, agregar host)
-#        - shortcuts para comandos predefinidos (copia, pegar, etc) y para ejecutar comandos
+#        - importar/exportar lista de Servers
+#        - menu contextual en grupos y Servers (expandir/Collapse all, Edit host, Add Host)
+#        - shortcuts para comandos predefinidos (copia, Paste, etc) y para ejecutar comandos
 #        - comprobar actualizaciones
-#        - Corrección de bug: autologin no funcionaba para algunos servidores telnet
+#        - Corrección de bug: autologin no funcionaba para algunos Servers telnet
 #
 # v0.5.0 - Corrección de bug que mostraba mal las consolas ssh en algunos casos (no se ocupaba todo el espacio de la consola)
-#        - Corrección de bug que cerraba dos consolas al tener la pantalla dividida y cerrar consola de la derecha
+#        - Corrección de bug que cerraba dos consolas al tener la pantalla dividida y Close console de la derecha
 #        - Se agrega opción de menu contextual con boton derecho
 #        - Se agrega opción de confirmar al cerrar una consola
 #        - Se muestra mensaje en pantalla cuando cambia la key de un host para ssh
@@ -382,7 +382,7 @@ def initialise_encyption_key():
         with os.fdopen(os.open(KEY_FILE, os.O_WRONLY | os.O_CREAT, 0600), 'w') as f:
             f.write(enc_passwd)
     except:
-        msgbox("Error initialising key_file")
+        msgbox("Error initializing key_file")
 
 ## funciones para encryptar passwords - no son muy seguras, pero impiden que los pass se guarden en texto plano
 def xor(pw, str1):
@@ -690,7 +690,7 @@ class Wmain(SimpleGladeApp):
                 self.writeConfig()
             return True            
         elif item == 'R': #RENAME TAB
-            text = inputbox(_('Renombrar consola'), _('Ingrese nuevo nombre'), self.popupMenuTab.label.get_text().strip())
+            text = inputbox(_('Rename tab'), _('Enter new name'), self.popupMenuTab.label.get_text().strip())
             if text != None and text != '':
                 self.popupMenuTab.label.set_text("  %s  " % (text))            
             return True
@@ -754,37 +754,37 @@ class Wmain(SimpleGladeApp):
                 
     def createMenu(self):
         self.popupMenu = gtk.Menu()
-        self.popupMenu.mnuCopy = menuItem = gtk.ImageMenuItem(_("Copiar"))
+        self.popupMenu.mnuCopy = menuItem = gtk.ImageMenuItem(_("Copy"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_COPY, gtk.ICON_SIZE_MENU))
         self.popupMenu.append(menuItem)
         menuItem.connect("activate", self.on_popupmenu, 'C')
         menuItem.show()
         
-        self.popupMenu.mnuPaste = menuItem = gtk.ImageMenuItem(_("Pegar"))
+        self.popupMenu.mnuPaste = menuItem = gtk.ImageMenuItem(_("Paste"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_PASTE, gtk.ICON_SIZE_MENU))
         self.popupMenu.append(menuItem)
         menuItem.connect("activate", self.on_popupmenu, 'V')
         menuItem.show()
         
-        self.popupMenu.mnuCopyPaste = menuItem = gtk.ImageMenuItem(_("Copiar y Pegar"))
+        self.popupMenu.mnuCopyPaste = menuItem = gtk.ImageMenuItem(_("Copy and Paste"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_INDEX, gtk.ICON_SIZE_MENU))
         self.popupMenu.append(menuItem)
         menuItem.connect("activate", self.on_popupmenu, 'CV')
         menuItem.show()
         
-        self.popupMenu.mnuSelect = menuItem = gtk.ImageMenuItem(_("Seleccionar todo"))
+        self.popupMenu.mnuSelect = menuItem = gtk.ImageMenuItem(_("Select all"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_SELECT_ALL, gtk.ICON_SIZE_MENU))
         self.popupMenu.append(menuItem)
         menuItem.connect("activate", self.on_popupmenu, 'A')
         menuItem.show()
         
-        self.popupMenu.mnuCopyAll = menuItem = gtk.ImageMenuItem(_("Copiar todo"))
+        self.popupMenu.mnuCopyAll = menuItem = gtk.ImageMenuItem(_("Copy all"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_SELECT_ALL, gtk.ICON_SIZE_MENU))
         self.popupMenu.append(menuItem)
         menuItem.connect("activate", self.on_popupmenu, 'CA')
         menuItem.show()
         
-        self.popupMenu.mnuSelect = menuItem = gtk.ImageMenuItem(_("Guardar buffer en archivo"))
+        self.popupMenu.mnuSelect = menuItem = gtk.ImageMenuItem(_("Save buffer to file"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_SAVE, gtk.ICON_SIZE_MENU))
         self.popupMenu.append(menuItem)
         menuItem.connect("activate", self.on_popupmenu, 'S')
@@ -794,30 +794,30 @@ class Wmain(SimpleGladeApp):
         self.popupMenu.append(menuItem)
         menuItem.show()
         
-        self.popupMenu.mnuReset = menuItem = gtk.ImageMenuItem(_("Reiniciar consola"))
+        self.popupMenu.mnuReset = menuItem = gtk.ImageMenuItem(_("Reset console"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_NEW, gtk.ICON_SIZE_MENU))
         self.popupMenu.append(menuItem)
         menuItem.connect("activate", self.on_popupmenu, 'RS2')
         menuItem.show()
         
-        self.popupMenu.mnuClear = menuItem = gtk.ImageMenuItem(_("Reiniciar y Limpiar consola"))
+        self.popupMenu.mnuClear = menuItem = gtk.ImageMenuItem(_("Reset and Clear console"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_CLEAR, gtk.ICON_SIZE_MENU))
         self.popupMenu.append(menuItem)
         menuItem.connect("activate", self.on_popupmenu, 'RC2')
         menuItem.show()
         
-        self.popupMenu.mnuClone = menuItem = gtk.ImageMenuItem(_("Clonar consola"))
+        self.popupMenu.mnuClone = menuItem = gtk.ImageMenuItem(_("Clone console"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_COPY, gtk.ICON_SIZE_MENU))
         self.popupMenu.append(menuItem)
         menuItem.connect("activate", self.on_popupmenu, 'CC2')
         menuItem.show()
 
-        self.popupMenu.mnuLog = menuItem = gtk.CheckMenuItem(_("Habilitar log"))
+        self.popupMenu.mnuLog = menuItem = gtk.CheckMenuItem(_("Enable logging"))
         self.popupMenu.append(menuItem)
         menuItem.connect("activate", self.on_popupmenu, 'L2')
         menuItem.show()
         
-        self.popupMenu.mnuClose = menuItem = gtk.ImageMenuItem(_("Cerrar consola"))
+        self.popupMenu.mnuClose = menuItem = gtk.ImageMenuItem(_("Close console"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_CLOSE, gtk.ICON_SIZE_MENU))
         self.popupMenu.append(menuItem)
         menuItem.connect("activate", self.on_popupmenu, 'X')
@@ -830,46 +830,46 @@ class Wmain(SimpleGladeApp):
         #Menu de comandos personalizados
         self.popupMenu.mnuCommands = gtk.Menu()
         
-        self.popupMenu.mnuCmds = menuItem = gtk.ImageMenuItem(_("Comandos personalizados"))
+        self.popupMenu.mnuCmds = menuItem = gtk.ImageMenuItem(_("Custom Commands"))
         menuItem.set_submenu(self.popupMenu.mnuCommands)
         self.popupMenu.append(menuItem)
         menuItem.show()
         self.populateCommandsMenu()
                 
-        #Menu contextual para panel de servidores
+        #Menu contextual para panel de Servers
         self.popupMenuFolder = gtk.Menu()
         
-        self.popupMenuFolder.mnuConnect = menuItem = gtk.ImageMenuItem(_("Conectar"))
+        self.popupMenuFolder.mnuConnect = menuItem = gtk.ImageMenuItem(_("Connect"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_EXECUTE, gtk.ICON_SIZE_MENU))
         self.popupMenuFolder.append(menuItem)
         menuItem.connect("activate", self.on_btnConnect_clicked)
         menuItem.show()
 
-        self.popupMenuFolder.mnuCopyAddress = menuItem = gtk.ImageMenuItem(_("Copiar Direccion"))
+        self.popupMenuFolder.mnuCopyAddress = menuItem = gtk.ImageMenuItem(_("Copy Address"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_COPY, gtk.ICON_SIZE_MENU))
         self.popupMenuFolder.append(menuItem)
         menuItem.connect("activate", self.on_popupmenu, 'H')
         menuItem.show()
         
-        self.popupMenuFolder.mnuAdd = menuItem = gtk.ImageMenuItem(_("Agregar Host"))
+        self.popupMenuFolder.mnuAdd = menuItem = gtk.ImageMenuItem(_("Add Host"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_ADD, gtk.ICON_SIZE_MENU))
         self.popupMenuFolder.append(menuItem)
         menuItem.connect("activate", self.on_btnAdd_clicked)
         menuItem.show()
         
-        self.popupMenuFolder.mnuEdit = menuItem = gtk.ImageMenuItem(_("Editar"))
+        self.popupMenuFolder.mnuEdit = menuItem = gtk.ImageMenuItem(_("Edit"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_EDIT, gtk.ICON_SIZE_MENU))
         self.popupMenuFolder.append(menuItem)
         menuItem.connect("activate", self.on_bntEdit_clicked)
         menuItem.show()
         
-        self.popupMenuFolder.mnuDel = menuItem = gtk.ImageMenuItem(_("Eliminar"))
+        self.popupMenuFolder.mnuDel = menuItem = gtk.ImageMenuItem(_("Remove"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_DELETE, gtk.ICON_SIZE_MENU))
         self.popupMenuFolder.append(menuItem)
         menuItem.connect("activate", self.on_btnDel_clicked)
         menuItem.show()
         
-        self.popupMenuFolder.mnuDup = menuItem = gtk.ImageMenuItem(_("Duplicar Host"))
+        self.popupMenuFolder.mnuDup = menuItem = gtk.ImageMenuItem(_("Duplicate Host"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_DND_MULTIPLE, gtk.ICON_SIZE_MENU))
         self.popupMenuFolder.append(menuItem)
         menuItem.connect("activate", self.on_popupmenu, 'D')
@@ -879,12 +879,12 @@ class Wmain(SimpleGladeApp):
         self.popupMenuFolder.append(menuItem)
         menuItem.show()
         
-        self.popupMenuFolder.mnuExpand = menuItem = gtk.ImageMenuItem(_("Expandir todo"))        
+        self.popupMenuFolder.mnuExpand = menuItem = gtk.ImageMenuItem(_("Expand all"))        
         self.popupMenuFolder.append(menuItem)
         menuItem.connect("activate", lambda *args: self.treeServers.expand_all())
         menuItem.show()
         
-        self.popupMenuFolder.mnuCollapse = menuItem = gtk.ImageMenuItem(_("Contraer todo"))
+        self.popupMenuFolder.mnuCollapse = menuItem = gtk.ImageMenuItem(_("Collapse all"))
         self.popupMenuFolder.append(menuItem)
         menuItem.connect("activate", lambda *args: self.treeServers.collapse_all())
         menuItem.show()
@@ -893,37 +893,37 @@ class Wmain(SimpleGladeApp):
         #Menu contextual para tabs
         self.popupMenuTab = gtk.Menu()
         
-        self.popupMenuTab.mnuRename = menuItem = gtk.ImageMenuItem(_("Renombrar consola"))
+        self.popupMenuTab.mnuRename = menuItem = gtk.ImageMenuItem(_("Rename tab"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_EDIT, gtk.ICON_SIZE_MENU))
         self.popupMenuTab.append(menuItem)
         menuItem.connect("activate", self.on_popupmenu, 'R')
         menuItem.show()
         
-        self.popupMenuTab.mnuReset = menuItem = gtk.ImageMenuItem(_("Reiniciar consola"))
+        self.popupMenuTab.mnuReset = menuItem = gtk.ImageMenuItem(_("Reset console"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_NEW, gtk.ICON_SIZE_MENU))
         self.popupMenuTab.append(menuItem)
         menuItem.connect("activate", self.on_popupmenu, 'RS')
         menuItem.show()
         
-        self.popupMenuTab.mnuClear = menuItem = gtk.ImageMenuItem(_("Reiniciar y Limpiar consola"))
+        self.popupMenuTab.mnuClear = menuItem = gtk.ImageMenuItem(_("Reset and Clear console"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_CLEAR, gtk.ICON_SIZE_MENU))
         self.popupMenuTab.append(menuItem)
         menuItem.connect("activate", self.on_popupmenu, 'RC')
         menuItem.show()
         
-        self.popupMenuTab.mnuReopen = menuItem = gtk.ImageMenuItem(_("Reconectar al host"))
+        self.popupMenuTab.mnuReopen = menuItem = gtk.ImageMenuItem(_("Reconnect to host"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_CONNECT, gtk.ICON_SIZE_MENU))
         self.popupMenuTab.append(menuItem)
         menuItem.connect("activate", self.on_popupmenu, 'RO')                
         #menuItem.show()
         
-        self.popupMenuTab.mnuClone = menuItem = gtk.ImageMenuItem(_("Clonar consola"))
+        self.popupMenuTab.mnuClone = menuItem = gtk.ImageMenuItem(_("Clone console"))
         menuItem.set_image(gtk.image_new_from_stock(gtk.STOCK_COPY, gtk.ICON_SIZE_MENU))
         self.popupMenuTab.append(menuItem)
         menuItem.connect("activate", self.on_popupmenu, 'CC')
         menuItem.show()
 
-        self.popupMenuTab.mnuLog = menuItem = gtk.CheckMenuItem(_("Habilitar log"))
+        self.popupMenuTab.mnuLog = menuItem = gtk.CheckMenuItem(_("Enable logging"))
         self.popupMenuTab.append(menuItem)
         menuItem.connect("activate", self.on_popupmenu, 'L')
         menuItem.show()
@@ -1024,7 +1024,7 @@ class Wmain(SimpleGladeApp):
                 terminal.log = open(filename, 'w', 0)
                 terminal.log.write("Session '%s' opened at %s\n%s\n" % (title, time.strftime("%Y-%m-%d %H:%M:%S"), "-"*80))
             except:
-                msgbox("%s\n%s" % (_("No se puede abrir el archivo de log para escritura"), filename))
+                msgbox("%s\n%s" % (_("Can't open log file for writting"), filename))
                 terminal.disconnect(terminal.log_handler_id)
                 del terminal.log_handler_id
                 return False
@@ -1177,7 +1177,7 @@ class Wmain(SimpleGladeApp):
             #guardar datos de consola para clonar consola
             v.host = host
         except:
-            msgbox("%s: %s" % (_("Error al conectar con servidor"), sys.exc_info()[1]))
+            msgbox("%s: %s" % (_("Error connecting to server"), sys.exc_info()[1]))
             
     def send_data(self, terminal, data):
         terminal.feed_child('%s\r' % (data))        
@@ -1257,7 +1257,7 @@ class Wmain(SimpleGladeApp):
             conf.SHOW_TOOLBAR = cp.getboolean("window", "show-toolbar")
             conf.STARTUP_LOCAL = cp.getboolean("options","startup-local")
         except:
-            print "%s: %s" % (_("Entrada invalida en archivo de configuracion"), sys.exc_info()[1])
+            print "%s: %s" % (_("Invalid entry in configuration file"), sys.exc_info()[1])
         
         #Leer shorcuts        
         scuts = {}
@@ -1351,7 +1351,7 @@ class Wmain(SimpleGladeApp):
                 
                 groups[host.group].append( host )
             except:                
-                print "%s: %s" % (_("Entrada invalida en archivo de configuracion"), sys.exc_info()[1])
+                print "%s: %s" % (_("Invalid entry in configuration file"), sys.exc_info()[1])
 
     def is_node_collapsed(self, model, path, iter, nodes):
         if self.treeModel.get_value(iter, 1)==None and not self.treeServers.row_expanded(path):
@@ -1572,7 +1572,7 @@ class Wmain(SimpleGladeApp):
 
     def check_notebook_pages(self, widget):
         if widget.get_n_pages()==0:
-            #eliminar el notebook solo si queda otro notebook y no quedan tabs en el actual            
+            #Remove el notebook solo si queda otro notebook y no quedan tabs en el actual            
             paned = widget.get_parent()            
             if paned==None or paned==self.hpMain:
                 return
@@ -1604,7 +1604,7 @@ class Wmain(SimpleGladeApp):
             delattr(self, "check_notebook")
         
     def show_save_buffer(self, terminal):        
-        dlg = gtk.FileChooserDialog(title=_("Guardar como"), parent=self.wMain, action=gtk.FILE_CHOOSER_ACTION_SAVE)
+        dlg = gtk.FileChooserDialog(title=_("Save as"), parent=self.wMain, action=gtk.FILE_CHOOSER_ACTION_SAVE)
         dlg.add_button(gtk.STOCK_CANCEL, gtk.RESPONSE_CANCEL)
         dlg.add_button(gtk.STOCK_SAVE, gtk.RESPONSE_OK)        
         dlg.set_do_overwrite_confirmation(True)
@@ -1624,7 +1624,7 @@ class Wmain(SimpleGladeApp):
                 f.close()
             except:                
                 dlg.destroy()
-                msgbox("%s: %s" % (_("No se puede abrir archivo para escritura"), filename) )
+                msgbox("%s: %s" % (_("Can't open file for writing"), filename) )
                 return
             
         dlg.destroy()
@@ -1658,7 +1658,7 @@ class Wmain(SimpleGladeApp):
     #-- Wmain.on_wMain_delete_event {
     def on_wMain_delete_event(self, widget, *args):
         (conf.WINDOW_WIDTH, conf.WINDOW_HEIGHT) = self.get_widget("wMain").get_size()
-        if conf.CONFIRM_ON_EXIT and self.count>0 and msgconfirm("%s %d %s" % (_("Hay"), self.count, _("consolas abiertas, confirma que desea salir?")) ) != gtk.RESPONSE_OK:
+        if conf.CONFIRM_ON_EXIT and self.count>0 and msgconfirm("%s %d %s" % (_("There are"), self.count, _("open consoles, exit anyway?")) ) != gtk.RESPONSE_OK:
             return True
     #-- Wmain.on_wMain_delete_event }
 
@@ -1672,15 +1672,15 @@ class Wmain(SimpleGladeApp):
         
     #-- Wmain.on_guardar_como1_activate }
 
-    #-- Wmain.on_importar_servidores1_activate {
-    def on_importar_servidores1_activate(self, widget, *args):
-        filename = show_open_dialog(parent=self.wMain, title=_("Abrir"), action=gtk.FILE_CHOOSER_ACTION_OPEN)
+    #-- Wmain.on_importar_Servers1_activate {
+    def on_importar_Servers1_activate(self, widget, *args):
+        filename = show_open_dialog(parent=self.wMain, title=_("Open"), action=gtk.FILE_CHOOSER_ACTION_OPEN)
         if filename != None:            
-            password = inputbox(_('Importar Servidores'), _('Ingrese clave: '), password=True)
+            password = inputbox(_('Import Servers'), _('Enter password: '), password=True)
             if password == None:
                 return                                                
             
-            #abrir archivo con lista de servers y cargarlos en el arbol
+            #Open archivo con lista de servers y cargarlos en el arbol
             try:
                 cp= ConfigParser.RawConfigParser( )
                 cp.read( filename )
@@ -1688,10 +1688,10 @@ class Wmain(SimpleGladeApp):
                 #validar el pass
                 s = decrypt(password, cp.get("gcm", "gcm"))
                 if (s != password[::-1]):
-                    msgbox(_("Clave invalida"))
+                    msgbox(_("Invalid password"))
                     return
             
-                if msgconfirm(_(u'Se sobreescribirá la lista de servidores, continuar?')) != gtk.RESPONSE_OK:
+                if msgconfirm(_(u'Server list will be overwritten, continue?')) != gtk.RESPONSE_OK:
                     return
                     
                 grupos={}
@@ -1705,20 +1705,20 @@ class Wmain(SimpleGladeApp):
         
                     grupos[host.group].append( host )
             except:                
-                msgbox(_("Archivo invalido"))
+                msgbox(_("Invalid file"))
                 return
             #sobreescribir lista de hosts
             global groups
             groups=grupos
             
             self.updateTree()
-    #-- Wmain.on_importar_servidores1_activate }
+    #-- Wmain.on_importar_Servers1_activate }
 
-    #-- Wmain.on_exportar_servidores1_activate {
-    def on_exportar_servidores1_activate(self, widget, *args):
-        filename = show_open_dialog(parent=self.wMain, title=_("Guardar como"), action=gtk.FILE_CHOOSER_ACTION_SAVE)
+    #-- Wmain.on_exportar_Servers1_activate {
+    def on_exportar_Servers1_activate(self, widget, *args):
+        filename = show_open_dialog(parent=self.wMain, title=_("Save as"), action=gtk.FILE_CHOOSER_ACTION_SAVE)
         if filename != None:
-            password = inputbox(_('Exportar Servidores'), _('Ingrese clave: '), password=True)
+            password = inputbox(_('Export Servers'), _('Enter password: '), password=True)
             if password == None:
                 return
                 
@@ -1740,8 +1740,8 @@ class Wmain(SimpleGladeApp):
                 f.close()
                 os.rename(filename + ".tmp", filename)
             except:
-                msgbox(_("Archivo invalido"))
-    #-- Wmain.on_exportar_servidores1_activate }
+                msgbox(_("Invalid file"))
+    #-- Wmain.on_exportar_Servers1_activate }
 
     #-- Wmain.on_salir1_activate {
     def on_salir1_activate(self, widget, *args):
@@ -1842,16 +1842,16 @@ class Wmain(SimpleGladeApp):
     def on_btnDel_clicked(self, widget, *args):
         if self.treeServers.get_selection().get_selected()[1]!=None:
             if not self.treeModel.iter_has_child(self.treeServers.get_selection().get_selected()[1]):
-                #Eliminar solo el nodo
+                #Remove solo el nodo
                 name = self.treeModel.get_value(self.treeServers.get_selection().get_selected()[1],0)
-                if msgconfirm("%s [%s]?" % (_("Confirma que desea eliminar el host"), name) ) == gtk.RESPONSE_OK:
+                if msgconfirm("%s [%s]?" % (_(" you really want to remove host"), name) ) == gtk.RESPONSE_OK:
                     host = self.treeModel.get_value(self.treeServers.get_selection().get_selected()[1],1)
                     groups[host.group].remove(host)
                     self.updateTree()
             else:                
-                #Eliminar todo el grupo                
+                #Remove todo el grupo                
                 group = self.get_group(self.treeModel.iter_children(self.treeServers.get_selection().get_selected()[1]))
-                if msgconfirm("%s [%s]?" % (_("Confirma que desea eliminar todos los hosts del grupo"), group) ) == gtk.RESPONSE_OK:                                
+                if msgconfirm("%s [%s]?" % (_("Do you really want to remove all hosts in group"), group) ) == gtk.RESPONSE_OK:                                
                     try:
                         del groups[group]
                     except:
@@ -1974,7 +1974,7 @@ class Wmain(SimpleGladeApp):
                     consoles.append( (title, terminal) )                
         
         if len(consoles)==0:
-            msgbox(_("No hay consolas abiertas"))
+            msgbox(_("No open consoles"))
             return True
             
         self.wCluster = Wcluster(terms=consoles).get_widget('wCluster')                   
@@ -2335,11 +2335,11 @@ class Whost(SimpleGladeApp):
         
         #Validar datos
         if group=="" or name=="" or (host=="" and ctype!='local'):
-            msgbox(_("Los campos grupo, nombre y host son obligatorios"))
+            msgbox(_("Fields group, name and host are required"))
             return
         
         if not (port and port.isdigit() and 1 <= int(port) <= 65535):
-            msgbox(_("Puerto invalido"))
+            msgbox(_("Invalid port"))
             return
         
         host = Host(group, name, description, host, user, password, private_key, port, tunnel, ctype, commands, keepalive, fcolor, bcolor, x11, agent, compression, compressionLevel,  extra_params, log, backspace_key, delete_key)
@@ -2352,9 +2352,9 @@ class Whost(SimpleGladeApp):
             if self.isNew:
                 for h in groups[group]:
                     if h.name == name:
-                        msgbox("%s [%s] %s [%s]" % (_("El nombre"), name, _("ya existe para el grupo"), group))
+                        msgbox("%s [%s] %s [%s]" % (_("Host name"), name, _("already exists for group"), group))
                         return
-                #agregar host a grupo
+                #Add Host a grupo
                 groups[group].append( host )
             else:
                 if self.oldGroup!=group:
@@ -2364,7 +2364,7 @@ class Whost(SimpleGladeApp):
                     else:
                         for h in groups[group]:
                             if h.name == name:
-                                msgbox("%s [%s] %s [%s]" % (_("El nombre"), name, _("ya existe para el grupo"), group))
+                                msgbox("%s [%s] %s [%s]" % (_("Host name"), name, _("already exists for group"), group))
                                 return
                         groups[group].append( host )
                         for h in groups[self.oldGroup]:
@@ -2375,7 +2375,7 @@ class Whost(SimpleGladeApp):
                     if self.oldName!=name:                        
                         for h in groups[self.oldGroup]:
                             if h.name == name:
-                                msgbox("%s [%s] %s [%s]" % (_("El nombre"), name, _("ya existe para el grupo"), group))
+                                msgbox("%s [%s] %s [%s]" % (_("Host name"), name, _("already exists for group"), group))
                                 return
                         for h in groups[self.oldGroup]:
                             if h.name == self.oldName:
@@ -2389,7 +2389,7 @@ class Whost(SimpleGladeApp):
                                 groups[self.oldGroup][ index ] = host
                                 break
         except:
-            msgbox("%s [%s]" % (_("Error al guardar el host. Descripcion"), sys.exc_info()[1]))            
+            msgbox("%s [%s]" % (_("Error saving host. Description"), sys.exc_info()[1]))            
         
         global wMain
         wMain.updateTree()
@@ -2472,12 +2472,12 @@ class Whost(SimpleGladeApp):
         
         #Validar datos del tunel
         if host == "":
-            msgbox(_("Debe ingresar host remoto"))
+            msgbox(_("Enter remote host"))
             return
             
         for x in self.treeModel:
             if x[0] == local:
-                msgbox(_("Puerto local ya fue asignado"))
+                msgbox(_("Local port already assigned"))
                 return
                         
         tunel = self.treeModel.append( [local, host, remote, '%s:%s:%s' % (local, host, remote) ] )
@@ -2513,7 +2513,7 @@ class Whost(SimpleGladeApp):
     #-- Whost.on_btnBrowse_clicked {
     def on_btnBrowse_clicked(self, widget, *args):
         global wMain
-        filename = show_open_dialog(parent=wMain.wMain, title=_("Abrir"), action=gtk.FILE_CHOOSER_ACTION_OPEN)
+        filename = show_open_dialog(parent=wMain.wMain, title=_("Open"), action=gtk.FILE_CHOOSER_ACTION_OPEN)
         if filename != None:
             self.txtPrivateKey.set_text(filename)
     #-- Whost.on_btnBrowse_clicked }
@@ -2565,18 +2565,18 @@ class Wconfig(SimpleGladeApp):
         self.capture_keys = False
         
         self.tblGeneral.rows = 0
-        self.addParam(_("Separador de Palabras"), "conf.WORD_SEPARATORS", str)
-        self.addParam(_(u"Tamaño del buffer"), "conf.BUFFER_LINES", int, 1, 1000000)
-        self.addParam(_("Transparencia"), "conf.TRANSPARENCY", int, 0, 100)
-        self.addParam(_("Ruta de logs"), "conf.LOG_PATH", str)
-        self.addParam(_("Abrir consola local al inicio"), "conf.STARTUP_LOCAL", bool)
-        self.addParam(_(u"Pegar con botón derecho"), "conf.PASTE_ON_RIGHT_CLICK", bool)
-        self.addParam(_(u"Copiar selección al portapapeles"), "conf.AUTO_COPY_SELECTION", bool)
-        self.addParam(_("Confirmar al cerrar una consola"), "conf.CONFIRM_ON_CLOSE_TAB", bool)
-        self.addParam(_("Cerrar consola"), "conf.AUTO_CLOSE_TAB", list, [_("Nunca"), _("Siempre"), _(u"Sólo si no hay errores")])
-        self.addParam(_("Confirmar al salir"), "conf.CONFIRM_ON_EXIT", bool)  
-        self.addParam(_("Comprobar actualizaciones"), "conf.CHECK_UPDATES", bool)
-        self.addParam(_(u"Ocultar botón donar"), "conf.HIDE_DONATE", bool)
+        self.addParam(_("Word separator"), "conf.WORD_SEPARATORS", str)
+        self.addParam(_(u"Buffer size"), "conf.BUFFER_LINES", int, 1, 1000000)
+        self.addParam(_("Transparency"), "conf.TRANSPARENCY", int, 0, 100)
+        self.addParam(_("Logs path"), "conf.LOG_PATH", str)
+        self.addParam(_("Open local console on startup"), "conf.STARTUP_LOCAL", bool)
+        self.addParam(_(u"Paste on right click"), "conf.PASTE_ON_RIGHT_CLICK", bool)
+        self.addParam(_(u"Copy selection to clipboard"), "conf.AUTO_COPY_SELECTION", bool)
+        self.addParam(_("Confirm on close console"), "conf.CONFIRM_ON_CLOSE_TAB", bool)
+        self.addParam(_("Close console"), "conf.AUTO_CLOSE_TAB", list, [_("Nunca"), _("Siempre"), _(u"Sólo si no hay errores")])
+        self.addParam(_("Confirm on exit"), "conf.CONFIRM_ON_EXIT", bool)  
+        self.addParam(_("Check updates"), "conf.CHECK_UPDATES", bool)
+        self.addParam(_(u"Hide donate button"), "conf.HIDE_DONATE", bool)
         
         if len(conf.FONT_COLOR)==0:
             self.get_widget("chkDefaultColors").set_active(True)
@@ -2608,7 +2608,7 @@ class Wconfig(SimpleGladeApp):
         #commandos
         self.treeModel = gtk.TreeStore(gobject.TYPE_STRING, gobject.TYPE_STRING)
         self.treeCmd.set_model(self.treeModel)
-        column = gtk.TreeViewColumn(_(u"Acción"), gtk.CellRendererText(), text=0)
+        column = gtk.TreeViewColumn(_(u"Action"), gtk.CellRendererText(), text=0)
         column.set_sizing(gtk.TREE_VIEW_COLUMN_FIXED)
         column.set_expand(True)
         self.treeCmd.append_column( column )
@@ -2617,7 +2617,7 @@ class Wconfig(SimpleGladeApp):
         renderer.set_property("editable", True)
         renderer.connect('edited', self.on_edited, self.treeModel, 1)
         renderer.connect('editing-started', self.on_editing_started, self.treeModel, 1)
-        column = gtk.TreeViewColumn(_("Atajo"), renderer, text=1)
+        column = gtk.TreeViewColumn(_("Shortcut"), renderer, text=1)
         column.set_sizing(gtk.TREE_VIEW_COLUMN_AUTOSIZE)
         column.set_expand(False)        
         self.treeCmd.append_column( column )
@@ -2627,7 +2627,7 @@ class Wconfig(SimpleGladeApp):
         renderer = MultilineCellRenderer()
         renderer.set_property("editable", True)
         renderer.connect('edited', self.on_edited, self.treeModel2, 0)
-        column = gtk.TreeViewColumn(_("Comando"), renderer, text=0)
+        column = gtk.TreeViewColumn(_("Command"), renderer, text=0)
         column.set_sizing(gtk.TREE_VIEW_COLUMN_FIXED)
         column.set_expand(True)       
         self.treeCustom.append_column( column )
@@ -2635,7 +2635,7 @@ class Wconfig(SimpleGladeApp):
         renderer.set_property("editable", True)
         renderer.connect('edited', self.on_edited, self.treeModel2, 1)
         renderer.connect('editing-started', self.on_editing_started, self.treeModel2, 1)        
-        column = gtk.TreeViewColumn(_("Atajo"), renderer, text=1)
+        column = gtk.TreeViewColumn(_("Shortcut"), renderer, text=1)
         column.set_sizing(gtk.TREE_VIEW_COLUMN_AUTOSIZE)
         column.set_expand(False)        
         self.treeCustom.append_column( column )
@@ -2768,7 +2768,7 @@ class Wconfig(SimpleGladeApp):
         if conf.HIDE_DONATE:
             wMain.get_widget("btnDonate").hide_all()
         else:
-            wMain.get_widget("btnDonate").show_all()
+            wMain.get_widget("btnDonate").hide_all()
         
         #Recrear menu de comandos personalizados
         wMain.populateCommandsMenu()        
@@ -2801,7 +2801,7 @@ class Wconfig(SimpleGladeApp):
 
     #-- Wconfig.on_btnFont_clicked {
     def on_btnFont_clicked(self, widget, *args):
-        show_font_dialog(self, _("Seleccione la fuente"), self.btnFont)
+        show_font_dialog(self, _("Select font"), self.btnFont)
     #-- Wconfig.on_btnFont_clicked }
 
     #-- Wconfig.on_treeCommands_key_press_event {
@@ -2967,7 +2967,7 @@ class NotebookTabLabel(gtk.HBox):
         self.eb2.modify_bg(gtk.STATE_NORMAL, bg[gtk.STATE_NORMAL])
         
     def on_close_tab(self, widget, notebook, *args):
-        if conf.CONFIRM_ON_CLOSE_TAB and msgconfirm("%s [%s]?" % ( _("Cerrar consola"), self.label.get_text().strip()) ) != gtk.RESPONSE_OK:
+        if conf.CONFIRM_ON_CLOSE_TAB and msgconfirm("%s [%s]?" % ( _("Close console"), self.label.get_text().strip()) ) != gtk.RESPONSE_OK:
             return True
         
         self.close_tab(widget)
