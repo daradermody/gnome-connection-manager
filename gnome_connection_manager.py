@@ -1062,7 +1062,7 @@ class Wmain(SimpleGladeApp):
             scrollPane = gtk.ScrolledWindow()            
             scrollPane.connect('button_press_event', lambda *args: True)
             scrollPane.set_property('hscrollbar-policy', gtk.POLICY_NEVER)
-            tab = NotebookTabLabel("  %s  " % (host.name), self.nbConsole, scrollPane, self.popupMenuTab )
+            tab = NotebookTabLabel("  %s  " % (host.group + "/" +  host.name if host.group else host.name), self.nbConsole, scrollPane, self.popupMenuTab )
             
             v.connect("child-exited", lambda widget: tab.mark_tab_as_closed())
             v.connect('focus', self.on_tab_focus)
