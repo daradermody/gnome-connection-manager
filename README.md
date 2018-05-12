@@ -4,6 +4,9 @@ This is an attempt to centralise all the contributions made by people to the now
 **Contributions encouraged**. It's much better for people to create a PR rather than a fork so everyone gets to benefit from your contributions. <3
 
 # gnome-connection-manager
+
+![GCM screenshot](screenshot.png)
+
 Tabbed SSH connection manager for GTK+ environments.
 
 - Gnome Connection Manager is licensed under the GNU General Public License version 3
