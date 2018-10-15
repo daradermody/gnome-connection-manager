@@ -69,25 +69,25 @@ msgid "There are"
 msgstr "Открыто консолей:"
 
 msgid "open consoles, exit anyway?"
-msgstr "Выйти несмотря на это?"
+msgstr "есть открытые консоли, всё равно выйти?"
 
 msgid "Import Servers"
-msgstr "Импорт хостов"
+msgstr "Импорт серверов"
 
 msgid "Enter password"
-msgstr "Введите пароль"
+msgstr "Введите пароль:"
 
 msgid "Invalid password"
 msgstr "Неправильный пароль"
 
 msgid "Server list will be overwritten, continue?"
-msgstr "Список хостов будет перезаписан. Вы уверены?"
+msgstr "Список серверов будет перезаписан. Вы уверены?"
 
 msgid "Invalid file"
 msgstr "Некорректный файл"
 
 msgid "Export Servers"
-msgstr "Экспорт хостов"
+msgstr "Экспорт серверов"
 
 msgid "Do you really want to remove all hosts in group"
 msgstr "Вы действительно хотите удалить все хосты в группе"
@@ -105,7 +105,7 @@ msgid "Remote"
 msgstr "Удалённый"
 
 msgid "Import server list from file"
-msgstr "Импорт списка хостов из файла"
+msgstr "Импорт списка серверов из файла"
 
 msgid "Fields group, name and host are required"
 msgstr "Требуется заполнить поля Группа, Имя и Хост"
@@ -114,7 +114,7 @@ msgid "Invalid port"
 msgstr "Некорректный порт"
 
 msgid "Host name"
-msgstr "Хост с именем"
+msgstr "Имя хоста"
 
 msgid "already exists for group"
 msgstr "уже есть в группе"
@@ -126,7 +126,7 @@ msgid "Enter remote host"
 msgstr "Введите адрес удалённого хоста"
 
 msgid "Local port already assigned"
-msgstr "Локальный порт занят"
+msgstr "Локальный порт уже занят"
 
 msgid "Word separator"
 msgstr "Разделитель слов"
@@ -138,13 +138,13 @@ msgid "Transparency"
 msgstr "Прозрачность"
 
 msgid "Paste on right click"
-msgstr "Вставить правой кнопкой мыши"
+msgstr "Вставить кликом по правой кнопки мыши"
 
 msgid "Confirm on close console"
-msgstr "Запрос подтверждения при закрытии консоли"
+msgstr "Запрашивать подтверждение при закрытии консоли"
 
 msgid "Confirm on exit"
-msgstr "Запрос подтверждения при выходи"
+msgstr "Запрашивать подтверждение при выходе"
 
 msgid "Show group name in tab"
 msgstr "Показать название группы на вкладке"
@@ -153,7 +153,7 @@ msgid "Action"
 msgstr "Действие"
 
 msgid "Shortcut"
-msgstr "Ярлык"
+msgstr "Сочетание клавиш"
 
 msgid "Command"
 msgstr "Команда"
@@ -178,10 +178,10 @@ msgid "Add new host"
 msgstr "Добавить новый хост"
 
 msgid "Shortcuts"
-msgstr "Ярлыки"
+msgstr "Сочетания клавиш"
 
 msgid "_Help"
-msgstr "_Помощь"
+msgstr "_Справка"
 
 msgid "Background color:"
 msgstr "Цвет фона:"
@@ -220,7 +220,7 @@ msgid "Send commands after login"
 msgstr "Выполнить команды после подключения"
 
 msgid "Export server list to file"
-msgstr "Экспорт списка хостов в файл"
+msgstr "Экспорт списка серверов в файл"
 
 msgid "General"
 msgstr "Основные"
@@ -265,10 +265,10 @@ msgid "Type"
 msgstr "Тип"
 
 msgid "Tunnel"
-msgstr "Тоннель"
+msgstr "Туннель"
 
 msgid "Unsplit all consoles"
-msgstr "Убрать разделение консолей"
+msgstr "Убрать разделение всех консолей"
 
 msgid "Default colors"
 msgstr "Цвета по умолчанию"
@@ -280,17 +280,18 @@ msgid "_File"
 msgstr "_Файл"
 
 msgid "_Export servers"
-msgstr "_Экспорт хостов"
+msgstr "_Экспорт серверов"
 
 msgid "_Import servers"
-msgstr "_Импорт хостов"
+msgstr "_Импорт серверов"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
 msgid "kuthulu"
-msgstr "Фокин Денис"
+msgstr "Фокин Денис\n"
+"vejed"
 
 msgid "Check updates"
-msgstr "Проверить обновления"
+msgstr "Проверять обновления"
 
 msgid ""
 "Hay una nueva version disponible en http://kuthulu.com/gcm/?module=download"
@@ -299,7 +300,7 @@ msgstr ""
 "программы"
 
 msgid "Rename tab"
-msgstr "Переименовать закладку"
+msgstr "Переименовать вкладку"
 
 msgid "Enter new name"
 msgstr "Введите новое имя"
@@ -311,7 +312,7 @@ msgid "Keep-Alive"
 msgstr "Отправлять Keep-Alive"
 
 msgid "Seconds between keep-alive packets"
-msgstr "Секунд между keep-alive пакетами"
+msgstr "Секунд между Keep-Alive пакетами"
 
 msgid "Reset console"
 msgstr "Переинициализировать консоль"
@@ -323,7 +324,7 @@ msgid "Hide donate button"
 msgstr "Скрыть напоминание о пожертвовании"
 
 msgid "Select font"
-msgstr "Выберите фонт"
+msgstr "Выберите шрифт"
 
 msgid "Leave blank for passwordless/public key authentication"
 msgstr "Оставьте пустым при аутентификации открытым ключом или без пароля"
@@ -344,13 +345,13 @@ msgid "Custom commands"
 msgstr "Пользовательские команды"
 
 msgid "Duplicate Host"
-msgstr "Хост уже существует"
+msgstr "Дублировать хост"
 
 msgid "Reconnect to host"
 msgstr "Переподключиться к хосту"
 
 msgid "Clone console"
-msgstr "клон консоль"
+msgstr "Клонировать консоль"
 
 msgid "No open consoles"
 msgstr "Нет открытых консолей"
@@ -371,77 +372,77 @@ msgid "Clear selection"
 msgstr "Снять выделение"
 
 msgid "Invert selection"
-msgstr "Обратить выделение"
+msgstr "Инвертировать выделение"
 
 msgid "Enter text to send to hosts: "
 msgstr "Введите текст для отправки хостам: "
 
 msgid "Quit"
-msgstr "выходи"
+msgstr "Выход"
 
 msgid "Copy and Paste"
 msgstr "Копировать и Вставить"
 
 msgid "_Quit"
-msgstr "_выходи"
+msgstr "В_ыход"
 
 msgid "To create subgroups use format group1/group2/group3"
-msgstr "Чтобы создать подгруппы использовать формат группе1/группе2/группе3"
+msgstr "Чтобы создать подгруппы, используйте формат группа1/группа2/группа3"
 
 msgid "Enable logging"
-msgstr "включить журнал"
+msgstr "Включить журнал"
 
 msgid "Can't open log file for writting"
 msgstr "Не могу открыть лог-файл для записи"
 
 msgid "Logs path"
-msgstr "путь к файлу журнала"
+msgstr "Путь к файлу журнала"
 
 msgid "Private key"
 msgstr "Закрытый ключ"
 
 msgid "Agent Forwarding"
-msgstr "Проброс агент"
+msgstr "Проброс Агента (ForwardAgent)"
 
 msgid "Description"
-msgstr "описание"
+msgstr "Описание"
 
 msgid "Dynamic"
-msgstr "динамик"
+msgstr "Динамик"
 
 msgid "Create dynamic port forwarding"
-msgstr "Создание динамических экспедирование"
+msgstr "Создать динамическую переадресацию портов"
 
 msgid ""
 "<span size='smaller'>Use ##D=milliseconds to insert a delay.\n"
 "Eg: ##D=1000</span>"
 msgstr ""
-"<span size='smaller'>Использование ##D=миллисекунды ввести задержку.\n"
+"<span size='smaller'>Используйте ##D=миллисекунд для вставки зареджки.\n"
 "например: ##D=1000</span>"
 
 msgid "<span size=\"smaller\">CTRL+UP/CTRL+DOWN for history</span>"
 msgstr "<span size=\"smaller\">CTRL+UP/CTRL+DOWN для истории</span>"
 
 msgid "Never"
-msgstr "никогда"
+msgstr "Никогда"
 
 msgid "Always"
-msgstr "всегда"
+msgstr "Всегда"
 
 msgid "Only on clean exit"
-msgstr "только при отсутствии ошибок"
+msgstr "Только при отсутствии ошибок"
 
 msgid "_View"
-msgstr "смотреть"
+msgstr "_Вид"
 
 msgid "Show Toolbar"
-msgstr "показать панель инструментов"
+msgstr "Показать панель инструментов"
 
 msgid "Show Panel"
-msgstr "показать панель"
+msgstr "Показать панель"
 
 msgid "Compression"
-msgstr "сжатие"
+msgstr "Сжатие"
 
 msgid ""
 "Compression level: \n"
@@ -449,19 +450,19 @@ msgid ""
 "1: min\n"
 "9: max"
 msgstr ""
-"степень сжатия: \n"
-"пустой: по умолчанию\n"
-"1: мин\n"
-"9: макс"
+"Степень сжатия: \n"
+"пусто: по умолчанию\n"
+"1: мин.\n"
+"9: макс."
 
 msgid "Extra arguments"
-msgstr "дополнительные аргументы"
+msgstr "Дополнительные аргументы"
 
 msgid "Extra arguments to pass to command line"
-msgstr "дополнительные аргументы для передачи командной строки"
+msgstr "Дополнительные аргументы для передачи в командную строку"
 
 msgid "Key sequences"
-msgstr "ключи последовательности"
+msgstr "Последовательности ключей"
 
 msgid "Backspace:"
 msgstr "Backspace:"
@@ -470,16 +471,16 @@ msgid "Delete:"
 msgstr "Delete:"
 
 msgid "Colors and Keys"
-msgstr "цветов и ключи"
+msgstr "Цвета и клавиши"
 
 msgid "Copy all"
 msgstr "Копировать всё"
 
 msgid "Open local console on startup"
-msgstr "Открытие локальной консоли при запуске"
+msgstr "Открытвать локальную консоль при запуске"
 
 msgid "_Edit"
 msgstr "_Правка"
 
 msgid "_Servers"
-msgstr "_Хосты"
+msgstr "С_ерверы"
