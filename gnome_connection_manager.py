@@ -249,6 +249,25 @@ _NEW_LOCAL = "new_local"
 
 ICON_PATH = BASE_PATH + "/icon.png"
 
+PALETTE = [
+    gtk.gdk.Color(red=0x28 / 255.0, green=0x2a / 255.0, blue=0x2e / 255.0),
+    gtk.gdk.Color(red=0xa5 / 255.0, green=0x42 / 255.0, blue=0x42 / 255.0),
+    gtk.gdk.Color(red=0x8c / 255.0, green=0x94 / 255.0, blue=0x40 / 255.0),
+    gtk.gdk.Color(red=0xde / 255.0, green=0x93 / 255.0, blue=0x5f / 255.0),
+    gtk.gdk.Color(red=0x3f / 255.0, green=0x61 / 255.0, blue=0x9d / 255.0),
+    gtk.gdk.Color(red=0x85 / 255.0, green=0x67 / 255.0, blue=0x8f / 255.0),
+    gtk.gdk.Color(red=0x5e / 255.0, green=0x8d / 255.0, blue=0x87 / 255.0),
+    gtk.gdk.Color(red=0xa0 / 255.0, green=0xa8 / 255.0, blue=0xb0 / 255.0),
+    gtk.gdk.Color(red=0x37 / 255.0, green=0x3b / 255.0, blue=0x41 / 255.0),
+    gtk.gdk.Color(red=0xcc / 255.0, green=0x66 / 255.0, blue=0x66 / 255.0),
+    gtk.gdk.Color(red=0xb5 / 255.0, green=0xbd / 255.0, blue=0x68 / 255.0),
+    gtk.gdk.Color(red=0xf0 / 255.0, green=0xc6 / 255.0, blue=0x74 / 255.0),
+    gtk.gdk.Color(red=0x61 / 255.0, green=0x82 / 255.0, blue=0xbe / 255.0),
+    gtk.gdk.Color(red=0xb2 / 255.0, green=0x94 / 255.0, blue=0xbb / 255.0),
+    gtk.gdk.Color(red=0x8a / 255.0, green=0xbe / 255.0, blue=0xb7 / 255.0),
+    gtk.gdk.Color(red=0xe5 / 255.0, green=0xe8 / 255.0, blue=0xe6 / 255.0),
+]
+
 glade_dir = ""
 locale_dir = BASE_PATH + "/lang"
 
@@ -1067,6 +1086,8 @@ class Wmain(SimpleGladeApp):
                 
             if len(fcolor)>0 and len(bcolor)>0:
                 v.set_colors(gtk.gdk.Color(fcolor), gtk.gdk.Color(bcolor), [])
+            else:
+                v.set_colors(gtk.gdk.Color(red=0.9,blue=0.9,green=0.9), gtk.gdk.Color(red=0.0,blue=0.0,green=0.0), PALETTE)
 
             if len(conf.FONT)==0:
                 conf.FONT = 'monospace'
