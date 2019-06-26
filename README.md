@@ -1,3 +1,8 @@
+# Fork of mjun
+This is an attempt to centralise all the contributions made by people to the now abandoned [gnome-connection-manager](https://github.com/mjun/gnome-connection-manager) repo. See [here](https://github.com/mjun/gnome-connection-manager/compare/master...daradermody:master) for a list of updates. All credit goes to authors of the respective commits.
+
+**Contributions encouraged**. It's much better for people to create a PR rather than a fork so everyone gets to benefit from your contributions. <3
+
 # gnome-connection-manager
 Tabbed SSH connection manager for GTK+ environments.
 
@@ -29,16 +34,13 @@ sudo apt-get install python-gtk2 expect python-vte libglade2-0 python-glade2
 ```
 
 ## Installing
-Once you have dependencies installed, it's as simple as placing gnome-connection-manager directory to a location of
-your choice and typing in shell:
+Once you have dependencies installed, it's as simple as placing gnome-connection-manager directory to a location of your choice and typing in shell:
 
 ```shell
 python gnome_connection_manager.py
 ```
 
-If you want to run the application from menu/launcher you can create .desktop file in your 
-~/.local/share/applications directory. Assuming you placed gnome-connection-manager source in directory
-~/.gnome-connection-manager/ your .desktop file could look like this:
+If you want to run the application from menu/launcher you can create .desktop file in your `~/.local/share/applications` directory. Assuming you placed gnome-connection-manager source in directory ~/.gnome-connection-manager/ your .desktop file could look like this:
 
 ```text
 [Desktop Entry]
@@ -55,6 +57,14 @@ Categories=GTK;GNOME;Network;
 ```
 
 Replace USERNAME in examples above with your username.
+
+## Installing on Ubuntu 19.04+
+Because python-vte is [not available in 19.04+](https://www.mail-archive.com/desktop-packages@lists.launchpad.net/msg579213.html) (it's been replaced with GObjectIntrospection), you have to install the library and some of its dependencies manually:
+- [libvte-common (0.28.2-5ubuntu5)](https://packages.ubuntu.com/cosmic/libvte-common)
+- [libvte9 (0.28.2-5ubuntu5)](https://packages.ubuntu.com/cosmic/libvte9)
+- [python-vte (0.28.2-5ubuntu5)](https://packages.ubuntu.com/cosmic/python-vte) 
+
+If anyone knows enough about python-vte and GObject Introspection, their advice or contribution on switching would be immensely appreciated.
 
 # Note about the author
 This is a fork of work done by Matko Jun. The original author of GCM is Renzo Bertuzzi (kuthulu@gmail.com).

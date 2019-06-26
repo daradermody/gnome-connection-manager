@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # -*- coding: UTF-8 -*-
 
 # Python module gnome_connection_manager.py
@@ -245,6 +245,7 @@ _CONSOLE_9 = ["console_9"]
 _CONSOLE_CLOSE = ["console_close"]
 _CONSOLE_RECONNECT = ["console_reconnect"]
 _CONNECT = ["connect"]
+_LOCAL = "local"
 
 ICON_PATH = BASE_PATH + "/icon.png"
 
@@ -344,13 +345,13 @@ def show_open_dialog(parent, title, action):
             
 def get_key_name(event):
     name = ""
-    if event.state & 4:
+    if event.state & gtk.gdk.CONTROL_MASK:
         name = name + "CTRL+"
-    if event.state & 1:
+    if event.state & gtk.gdk.SHIFT_MASK:
         name = name + "SHIFT+"
-    if event.state & 8:
+    if event.state & gtk.gdk.MOD1_MASK:
         name = name + "ALT+"
-    if event.state & 67108864:
+    if event.state & gtk.gdk.SUPER_MASK:
         name = name + "SUPER+"
     return name + gtk.gdk.keyval_name(event.keyval).upper()
      
@@ -561,9 +562,17 @@ class Wmain(SimpleGladeApp):
                     if hasattr(self, 'search'):
                         self.find_word(backwards=True)
                 elif cmd == _CONSOLE_PREV:
-                    widget.get_parent().get_parent().prev_page()
+                    notebook = widget.get_parent().get_parent()
+                    if notebook.current_page() == 0:
+                        notebook.set_current_page(len(notebook) - 1)
+                    else:
+                        notebook.prev_page()
                 elif cmd == _CONSOLE_NEXT:
-                    widget.get_parent().get_parent().next_page()
+                    notebook = widget.get_parent().get_parent()
+                    if notebook.current_page() == len(notebook) - 1:
+                        notebook.set_current_page(0)
+                    else:
+                        notebook.next_page()
                 elif cmd == _CONSOLE_CLOSE:
                     wid = widget.get_parent()                    
                     page = widget.get_parent().get_parent().page_num(wid)                    
@@ -587,7 +596,9 @@ class Wmain(SimpleGladeApp):
                     self.on_btnConnect_clicked(None)
                 elif cmd[0][0:8] == "console_":
                     page = int(cmd[0][8:]) - 1                   
-                    widget.get_parent().get_parent().set_current_page(page)                
+                    widget.get_parent().get_parent().set_current_page(page)
+            elif cmd == _LOCAL:
+                self.on_btnLocal_clicked(None)
             else:
                 #comandos del usuario
                 widget.feed_child(cmd)
@@ -1293,12 +1304,12 @@ class Wmain(SimpleGladeApp):
         try:
             scuts[cp.get("shortcuts", "console_previous")] = _CONSOLE_PREV
         except:
-            scuts["CTRL+SHIFT+LEFT"] = _CONSOLE_PREV
+            scuts["CTRL+SHIFT+ISO_LEFT_TAB"] = _CONSOLE_PREV
         
         try:
             scuts[cp.get("shortcuts", "console_next")] = _CONSOLE_NEXT
         except:
-            scuts["CTRL+SHIFT+RIGHT"] = _CONSOLE_NEXT
+            scuts["CTRL+TAB"] = _CONSOLE_NEXT
 
         try:
             scuts[cp.get("shortcuts", "console_close")] = _CONSOLE_CLOSE
@@ -1308,7 +1319,7 @@ class Wmain(SimpleGladeApp):
         try:
             scuts[cp.get("shortcuts", "console_reconnect")] = _CONSOLE_RECONNECT
         except:
-            scuts["CTRL+N"] = _CONSOLE_RECONNECT
+            scuts["CTRL+SHIFT+N"] = _CONSOLE_RECONNECT
           
         try:
             scuts[cp.get("shortcuts", "connect")] = _CONNECT
@@ -1320,6 +1331,11 @@ class Wmain(SimpleGladeApp):
             scuts[cp.get("shortcuts", "reset")] = _CLEAR
         except:
             scuts["CTRL+K"] = _CLEAR
+
+        try:
+            scuts[cp.get("shortcuts", "open_local")] = _LOCAL
+        except:
+            scuts["CTRL+N"] = _LOCAL
 
         #shortcuts para cambiar consola1-consola9
         for x in range(1,10):
