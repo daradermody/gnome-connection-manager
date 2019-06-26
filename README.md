@@ -67,4 +67,4 @@ Because python-vte is [not available in 19.04+](https://www.mail-archive.com/des
 If anyone knows enough about python-vte and GObject Introspection, their advice or contribution on switching would be immensely appreciated.
 
 # Note about the author
-This is a fork of work done by Matko Jun. The original author of GCM is Renzo Bertuzzi (kuthulu@gmail.com).
+This is a fork of a [fork](https://github.com/sirkuttin/gnome-connection-manager) of [Matko Jun's fork](https://github.com/mjun/gnome-connection-manager) of [Renzo Bertuzzi's work](http://kuthulu.com/gcm/). The reason I made this 27th fork relating Jun's repo was to hopefully start getting contributions all flowing into the same place, as opposed to getting fixes and updates distributed amonst the other repos. Fixes and PRs welcome!
