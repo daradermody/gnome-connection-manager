@@ -245,7 +245,7 @@ _CONSOLE_9 = ["console_9"]
 _CONSOLE_CLOSE = ["console_close"]
 _CONSOLE_RECONNECT = ["console_reconnect"]
 _CONNECT = ["connect"]
-_LOCAL = "local"
+_LOCAL = "new_local"
 
 ICON_PATH = BASE_PATH + "/icon.png"
 
@@ -276,6 +276,8 @@ class conf():
     CHECK_UPDATES=True
     WINDOW_WIDTH = -1
     WINDOW_HEIGHT = -1
+    SETTINGS_WIDTH = 500
+    SETTINGS_HEIGHT = 600
     FONT = ""
     HIDE_DONATE = False
     AUTO_COPY_SELECTION = 0
@@ -1258,6 +1260,8 @@ class Wmain(SimpleGladeApp):
             conf.LEFT_PANEL_WIDTH = cp.getint("window", "left-panel-width")
             conf.WINDOW_WIDTH = cp.getint("window", "window-width")
             conf.WINDOW_HEIGHT = cp.getint("window", "window-height")
+            conf.SETTINGS_WIDTH = cp.getint("window", "settings-width")
+            conf.SETTINGS_HEIGHT = cp.getint("window", "settings-height")
             conf.FONT = cp.get("options", "font")
             conf.HIDE_DONATE = cp.getboolean("options", "donate")
             conf.AUTO_COPY_SELECTION = cp.getboolean("options", "auto-copy-selection")
@@ -1300,16 +1304,16 @@ class Wmain(SimpleGladeApp):
             scuts[cp.get("shortcuts", "find_back")] = _FIND_BACK
         except:
             scuts["SHIFT+F3"] = _FIND_BACK
-        
+
         try:
             scuts[cp.get("shortcuts", "console_previous")] = _CONSOLE_PREV
         except:
-            scuts["CTRL+SHIFT+ISO_LEFT_TAB"] = _CONSOLE_PREV
-        
+            scuts["CTRL+SHIFT+LEFT"] = _CONSOLE_PREV
+
         try:
             scuts[cp.get("shortcuts", "console_next")] = _CONSOLE_NEXT
         except:
-            scuts["CTRL+TAB"] = _CONSOLE_NEXT
+            scuts["CTRL+SHIFT+RIGHT"] = _CONSOLE_NEXT
 
         try:
             scuts[cp.get("shortcuts", "console_close")] = _CONSOLE_CLOSE
@@ -1488,6 +1492,8 @@ class Wmain(SimpleGladeApp):
         cp.set("window", "left-panel-width", self.hpMain.get_position())
         cp.set("window", "window-width", conf.WINDOW_WIDTH)
         cp.set("window", "window-height", conf.WINDOW_HEIGHT)
+        cp.set("window", "settings-width", conf.SETTINGS_WIDTH)
+        cp.set("window", "settings-height", conf.SETTINGS_HEIGHT)
         cp.set("window", "show-panel", conf.SHOW_PANEL)
         cp.set("window", "show-toolbar", conf.SHOW_TOOLBAR)
         
@@ -2566,6 +2572,8 @@ class Wconfig(SimpleGladeApp):
                  domain=domain_name, **kwargs):
         path = os.path.join(glade_dir, path)
         SimpleGladeApp.__init__(self, path, root, domain, **kwargs)
+        if conf.SETTINGS_WIDTH != -1 and conf.SETTINGS_HEIGHT != -1:
+            self.get_widget("wConfig").resize(conf.SETTINGS_WIDTH, conf.SETTINGS_HEIGHT)
 
     #-- Wconfig.new {
     def new(self):
@@ -2656,14 +2664,10 @@ class Wconfig(SimpleGladeApp):
         column.set_expand(False)        
         self.treeCustom.append_column( column )
         
-        slist = sorted(shortcuts.iteritems(), key=lambda (k,v): (v,k))
-        
-        for s in slist:
-            if type(s[1])==list:
-                self.treeModel.append(None, [ s[1][0], s[0] ])
-        for s in slist:
-            if type(s[1])!=list:
-                self.treeModel2.append(None, [ s[1], s[0] ])
+        sorted_shortcut_list = sorted(shortcuts.iteritems(), key=lambda (key_combo, command_name): (command_name, key_combo))
+        for key_combo, command_name in sorted_shortcut_list:
+            command_name = command_name[0] if type(command_name) == list else command_name
+            self.treeModel.append(None, [ command_name, key_combo ])
 
         self.treeModel2.append(None, [ '', '' ])
     #-- Wconfig.new }
@@ -2822,10 +2826,13 @@ class Wconfig(SimpleGladeApp):
 
     #-- Wconfig.on_treeCommands_key_press_event {
     def on_treeCommands_key_press_event(self, widget, event, *args):
-        if self.capture_keys and len(args)==3 and (event.keyval != gtk.keysyms.Return or
-                                                   event.state != 0):
-            model, rownum, colnum = args           
-            widget.set_text(get_key_name(event))            
+        if event.keyval not in [gtk.keysyms.Return, gtk.keysyms.Escape]:
+            modifier_held_down = event.state & (gtk.gdk.CONTROL_MASK | gtk.gdk.SHIFT_MASK | gtk.gdk.MOD1_MASK | gtk.gdk.SUPER_MASK)
+            if not modifier_held_down:
+                widget.set_text('')
+            elif self.capture_keys and len(args) == 3:
+                widget.set_text(get_key_name(event))
+            return True
     #-- Wconfig.on_treeCommands_key_press_event }
 
 
