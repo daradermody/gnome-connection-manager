@@ -245,7 +245,7 @@ _CONSOLE_9 = ["console_9"]
 _CONSOLE_CLOSE = ["console_close"]
 _CONSOLE_RECONNECT = ["console_reconnect"]
 _CONNECT = ["connect"]
-_LOCAL = "new_local"
+_NEW_LOCAL = "new_local"
 
 ICON_PATH = BASE_PATH + "/icon.png"
 
@@ -265,6 +265,7 @@ class conf():
     BUFFER_LINES=2000
     STARTUP_LOCAL=True
     CONFIRM_ON_EXIT=True
+    SHOW_GROUP_NAME_IN_TAB=False
     FONT_COLOR = ""
     BACK_COLOR = ""
     TRANSPARENCY = 0
@@ -599,7 +600,7 @@ class Wmain(SimpleGladeApp):
                 elif cmd[0][0:8] == "console_":
                     page = int(cmd[0][8:]) - 1                   
                     widget.get_parent().get_parent().set_current_page(page)
-            elif cmd == _LOCAL:
+            elif cmd == _NEW_LOCAL:
                 self.on_btnLocal_clicked(None)
             else:
                 #comandos del usuario
@@ -1075,7 +1076,9 @@ class Wmain(SimpleGladeApp):
             scrollPane = gtk.ScrolledWindow()            
             scrollPane.connect('button_press_event', lambda *args: True)
             scrollPane.set_property('hscrollbar-policy', gtk.POLICY_NEVER)
-            tab = NotebookTabLabel("  %s  " % (host.group + "/" +  host.name if host.group else host.name), self.nbConsole, scrollPane, self.popupMenuTab )
+
+            prefix = host.group + "/" if host.group and conf.SHOW_GROUP_NAME_IN_TAB else ""
+            tab = NotebookTabLabel("  %s  " % (prefix + host.name), self.nbConsole, scrollPane, self.popupMenuTab )
             
             v.connect("child-exited", lambda widget: tab.mark_tab_as_closed())
             v.connect('focus', self.on_tab_focus)
@@ -1250,6 +1253,7 @@ class Wmain(SimpleGladeApp):
             conf.WORD_SEPARATORS = cp.get("options", "word-separators")
             conf.BUFFER_LINES = cp.getint("options", "buffer-lines")
             conf.CONFIRM_ON_EXIT = cp.getboolean("options", "confirm-exit")
+            conf.SHOW_GROUP_NAME_IN_TAB = cp.getboolean("options", "show-group-name-in-tab")
             conf.FONT_COLOR = cp.get("options", "font-color")
             conf.BACK_COLOR = cp.get("options", "back-color")
             conf.TRANSPARENCY = cp.getint("options", "transparency")
@@ -1337,9 +1341,9 @@ class Wmain(SimpleGladeApp):
             scuts["CTRL+K"] = _CLEAR
 
         try:
-            scuts[cp.get("shortcuts", "open_local")] = _LOCAL
+            scuts[cp.get("shortcuts", "new_local")] = _NEW_LOCAL
         except:
-            scuts["CTRL+N"] = _LOCAL
+            scuts["CTRL+N"] = _NEW_LOCAL
 
         #shortcuts para cambiar consola1-consola9
         for x in range(1,10):
@@ -1473,6 +1477,7 @@ class Wmain(SimpleGladeApp):
         cp.set("options", "buffer-lines", conf.BUFFER_LINES)
         cp.set("options", "startup-local", conf.STARTUP_LOCAL)
         cp.set("options", "confirm-exit", conf.CONFIRM_ON_EXIT)
+        cp.set("options", "show-group-name-in-tab", conf.SHOW_GROUP_NAME_IN_TAB)
         cp.set("options", "font-color", conf.FONT_COLOR)
         cp.set("options", "back-color", conf.BACK_COLOR)
         cp.set("options", "transparency", conf.TRANSPARENCY)        
@@ -2599,6 +2604,7 @@ class Wconfig(SimpleGladeApp):
         self.addParam(_("Confirm on close console"), "conf.CONFIRM_ON_CLOSE_TAB", bool)
         self.addParam(_("Close console"), "conf.AUTO_CLOSE_TAB", list, [_("Never"), _("Always"), _(u"Only on clean exit")])
         self.addParam(_("Confirm on exit"), "conf.CONFIRM_ON_EXIT", bool)  
+        self.addParam(_("Show group name in tab"), "conf.SHOW_GROUP_NAME_IN_TAB", bool)
         self.addParam(_("Check updates"), "conf.CHECK_UPDATES", bool)
         self.addParam(_(u"Hide donate button"), "conf.HIDE_DONATE", bool)
         
