@@ -54,6 +54,7 @@ Terminal=false
 Type=Application
 Icon=~/.gnome-connection-manager/icon.png
 Categories=GTK;GNOME;Network;
+StartupWMClass=gnome_connection_manager.py
 ```
 
 Replace USERNAME in examples above with your username.
@@ -62,7 +63,7 @@ Replace USERNAME in examples above with your username.
 Because python-vte is [not available in 19.04+](https://www.mail-archive.com/desktop-packages@lists.launchpad.net/msg579213.html) (it's been replaced with GObjectIntrospection), you have to install the library and some of its dependencies manually:
 - [libvte-common (0.28.2-5ubuntu5)](https://packages.ubuntu.com/cosmic/libvte-common)
 - [libvte9 (0.28.2-5ubuntu5)](https://packages.ubuntu.com/cosmic/libvte9)
-- [python-vte (0.28.2-5ubuntu5)](https://packages.ubuntu.com/cosmic/python-vte) 
+- [python-vte (0.28.2-5ubuntu5)](https://packages.ubuntu.com/cosmic/python-vte)
 
 If anyone knows enough about python-vte and GObject Introspection, their advice or contribution on switching would be immensely appreciated.
 
