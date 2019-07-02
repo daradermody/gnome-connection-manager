@@ -17,88 +17,82 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Copiar"
+msgid "Copy"
 msgstr "Копировать"
 
-msgid "Pegar"
+msgid "Paste"
 msgstr "Вставить"
 
-msgid "Seleccionar todo"
+msgid "Select all"
 msgstr "Выделить всё"
 
-msgid "Guardar buffer en archivo"
+msgid "Save buffer to file"
 msgstr "Сохранить буфер в файл"
 
-msgid "Cerrar consola"
+msgid "Close console"
 msgstr "Закрыть консоль"
 
-msgid "Conectar"
+msgid "Connect"
 msgstr "Соединить"
 
-msgid "Agregar Host"
+msgid "Add Host"
 msgstr "Добавить хост"
 
-msgid "Editar"
+msgid "Edit"
 msgstr "Редактировать"
 
-msgid "Eliminar"
+msgid "Remove"
 msgstr "Удалить"
 
-msgid "Expandir todo"
+msgid "Expand all"
 msgstr "Развернуть все"
 
-msgid "Contraer todo"
+msgid "Collapse all"
 msgstr "Свернуть все"
 
-msgid "Error al conectar con servidor"
+msgid "Error connecting to server"
 msgstr "Ошибка соединения с хостом"
 
-msgid "Servidores"
+msgid "Servers"
 msgstr "Хосты"
 
-msgid "Entrada invalida en archivo de configuracion"
+msgid "Invalid entry in configuration file"
 msgstr "Некорректный параметр в файле конфигурации"
 
-msgid "Guardar como"
+msgid "Save as"
 msgstr "Сохранить как"
 
-msgid "No se puede abrir archivo para escritura"
-msgstr "Не могу открыть файл для записи"
-
-msgid "Abrir"
+msgid "Open"
 msgstr "Открыть"
 
-msgid "Hay"
+msgid "There are"
 msgstr "Открыто консолей:"
 
-msgid "consolas abiertas, confirma que desea salir?"
+msgid "open consoles, exit anyway?"
 msgstr "Выйти несмотря на это?"
 
-msgid "Importar Servidores"
+msgid "Import Servers"
 msgstr "Импорт хостов"
 
-msgid "Ingrese clave: "
+msgid "Enter password"
 msgstr "Введите пароль"
 
-msgid "Clave invalida"
+msgid "Invalid password"
 msgstr "Неправильный пароль"
 
-msgid "Se sobreescribirá la lista de servidores, continuar?"
+msgid "Server list will be overwritten, continue?"
 msgstr "Список хостов будет перезаписан. Вы уверены?"
 
-msgid "Archivo invalido"
+msgid "Invalid file"
 msgstr "Некорректный файл"
 
-msgid "Exportar Servidores"
+msgid "Export Servers"
 msgstr "Экспорт хостов"
 
-msgid "Confirma que desea eliminar el host"
-msgstr "Вы действительно хотите удалить хост"
-
-msgid "Confirma que desea eliminar todos los hosts del grupo"
+msgid "Do you really want to remove all hosts in group"
 msgstr "Вы действительно хотите удалить все хосты в группе"
 
-msgid "buscar..."
+msgid "search..."
 msgstr "поиск..."
 
 msgid "Local"
@@ -107,192 +101,195 @@ msgstr "Локальный"
 msgid "Host"
 msgstr "Хост"
 
-msgid "Remoto"
+msgid "Remote"
 msgstr "Удалённый"
 
-msgid "Importar lista de servidores desde un archivo"
+msgid "Import server list from file"
 msgstr "Импорт списка хостов из файла"
 
-msgid "Los campos grupo, nombre y host son obligatorios"
+msgid "Fields group, name and host are required"
 msgstr "Требуется заполнить поля Группа, Имя и Хост"
 
-msgid "Puerto invalido"
+msgid "Invalid port"
 msgstr "Некорректный порт"
 
-msgid "El nombre"
+msgid "Host name"
 msgstr "Хост с именем"
 
-msgid "ya existe para el grupo"
+msgid "already exists for group"
 msgstr "уже есть в группе"
 
-msgid "Error al guardar el host. Descripcion"
+msgid "Error saving host. Description"
 msgstr "Не могу сохранить хост. Описание"
 
-msgid "Debe ingresar host remoto"
+msgid "Enter remote host"
 msgstr "Введите адрес удалённого хоста"
 
-msgid "Puerto local ya fue asignado"
+msgid "Local port already assigned"
 msgstr "Локальный порт занят"
 
-msgid "Separador de Palabras"
+msgid "Word separator"
 msgstr "Разделитель слов"
 
-msgid "Tamaño del buffer"
+msgid "Buffer size"
 msgstr "Размер буфера"
 
-msgid "Transparencia"
+msgid "Transparency"
 msgstr "Прозрачность"
 
-msgid "Pegar con botón derecho"
+msgid "Paste on right click"
 msgstr "Вставить правой кнопкой мыши"
 
-msgid "Confirmar al cerrar una consola"
+msgid "Confirm on close console"
 msgstr "Запрос подтверждения при закрытии консоли"
 
-msgid "Confirmar al salir"
+msgid "Confirm on exit"
 msgstr "Запрос подтверждения при выходи"
 
-msgid "Acción"
+msgid "Show group name in tab"
+msgstr "Показать название группы на вкладке"
+
+msgid "Action"
 msgstr "Действие"
 
-msgid "Atajo"
+msgid "Shortcut"
 msgstr "Ярлык"
 
-msgid "Comando"
+msgid "Command"
 msgstr "Команда"
 
-msgid "Seleccione el color de fondo"
+msgid "Select background color"
 msgstr "Выберите цвет фона"
 
-msgid "Seleccione el color del texto"
+msgid "Select foreground color"
 msgstr "Выберите цвет текста"
 
 #. -- main }
-msgid "A_cerca de"
+msgid "_About"
 msgstr "_О программе"
 
-msgid "Abrir consola local"
+msgid "Open local console"
 msgstr "Открыть локальную консоль"
 
-msgid "Agregar"
+msgid "Add"
 msgstr "Добавить"
 
-msgid "Agregar nuevo host"
+msgid "Add new host"
 msgstr "Добавить новый хост"
 
-msgid "Atajos"
+msgid "Shortcuts"
 msgstr "Ярлыки"
 
-msgid "Ay_uda"
+msgid "_Help"
 msgstr "_Помощь"
 
-msgid "Color del fondo:"
+msgid "Background color:"
 msgstr "Цвет фона:"
 
-msgid "Color del texto:"
+msgid "Foreground color:"
 msgstr "Цвет текста:"
 
-msgid "Colores"
+msgid "Colors"
 msgstr "Цвета"
 
-msgid "Comandos"
+msgid "Commands"
 msgstr "Команды"
 
-msgid "Comandos Personalizados"
+msgid "Custom Commands"
 msgstr "Пользовательские команды"
 
-msgid "Comandos Predefinidos"
+msgid "Standard Commands"
 msgstr "Стандартные команды"
 
-msgid "Conectar a host seleccionado o a todos los host del grupo"
+msgid "Connect to selected host or all hosts in selected group"
 msgstr "Соединиться с выбранным хостом или со всеми хостами в группе"
 
-msgid "Configuración"
+msgid "Settings"
 msgstr "Настройки"
 
-msgid "Editar Host"
+msgid "Edit Host"
 msgstr "Редактировать хост"
 
-msgid "Editar propiedades de host seleccionado"
+msgid "Edit hosts properties"
 msgstr "Изменение свойств хоста"
 
-msgid "Eliminar host seleccionado"
+msgid "Remove selected host"
 msgstr "Удалить выбранный хост"
 
-msgid "Enviar comandos al iniciar sesión"
+msgid "Send commands after login"
 msgstr "Выполнить команды после подключения"
 
-msgid "Exportar lista de servidores a un archivo"
+msgid "Export server list to file"
 msgstr "Экспорт списка хостов в файл"
 
 msgid "General"
 msgstr "Основные"
 
-msgid "Grupo"
+msgid "Group"
 msgstr "Группа"
 
-msgid "Guardar buffer _como"
+msgid "Save buffer as"
 msgstr "Сохранить буфер как"
 
-msgid "Guardar buffer de la consola activa en un archivo"
+msgid "Save active console buffer to file"
 msgstr "Сохранить буфер активной консоли в файл"
 
-msgid "Host Remoto"
+msgid "Remote Host"
 msgstr "Удалённый хост"
 
-msgid "Nombre"
+msgid "Name"
 msgstr "Имя"
 
 msgid "Password"
 msgstr "Пароль"
 
-msgid "Propiedades"
+msgid "Properties"
 msgstr "Свойства"
 
-msgid "Puerto"
+msgid "Port"
 msgstr "Порт"
 
-msgid "Puerto Local"
+msgid "Local port"
 msgstr "Локальный порт"
 
-msgid "Puerto Remoto"
+msgid "Remote Port"
 msgstr "Удалённый порт"
 
-msgid "Separar consola horizontalmente"
+msgid "Split console horizontally"
 msgstr "Разделить консоли по горизонтали"
 
-msgid "Separar consola verticalmente"
+msgid "Split console vertically"
 msgstr "Разделить консоли по вертикали"
 
-msgid "Tipo"
+msgid "Type"
 msgstr "Тип"
 
-msgid "Túnel"
+msgid "Tunnel"
 msgstr "Тоннель"
 
-msgid "Unir todas las consolas"
+msgid "Unsplit all consoles"
 msgstr "Убрать разделение консолей"
 
-msgid "Usar colores por defecto"
+msgid "Default colors"
 msgstr "Цвета по умолчанию"
 
-msgid "Usuario"
+msgid "User"
 msgstr "Пользователь"
 
-msgid "_Archivo"
+msgid "_File"
 msgstr "_Файл"
 
-msgid "_Exportar servidores"
+msgid "_Export servers"
 msgstr "_Экспорт хостов"
 
-msgid "_Importar servidores"
+msgid "_Import servers"
 msgstr "_Импорт хостов"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-msgid "translator-credits"
+msgid "kuthulu"
 msgstr "Фокин Денис"
 
-msgid "Comprobar actualizaciones"
+msgid "Check updates"
 msgstr "Проверить обновления"
 
 msgid ""
@@ -301,157 +298,151 @@ msgstr ""
 "На сайте http://kuthulu.com/gcm/?module=download доступна новая версия "
 "программы"
 
-msgid "Renombrar consola"
+msgid "Rename tab"
 msgstr "Переименовать закладку"
 
-msgid "Ingrese nuevo nombre"
+msgid "Enter new name"
 msgstr "Введите новое имя"
 
-msgid "Copiar Direccion"
+msgid "Copy Address"
 msgstr "Копировать адрес"
 
 msgid "Keep-Alive"
 msgstr "Отправлять Keep-Alive"
 
-msgid "Intervalo en segundos para enviar paquetes keep-alive"
+msgid "Seconds between keep-alive packets"
 msgstr "Секунд между keep-alive пакетами"
 
-msgid "Reiniciar consola"
+msgid "Reset console"
 msgstr "Переинициализировать консоль"
 
-msgid "Reiniciar y Limpiar consola"
+msgid "Reset and Clear console"
 msgstr "Переинициализировать и очистить консоль"
 
-msgid "Ocultar botón donar"
+msgid "Hide donate button"
 msgstr "Скрыть напоминание о пожертвовании"
 
-msgid "Seleccione la fuente"
+msgid "Select font"
 msgstr "Выберите фонт"
 
-msgid "Dejar en blanco para autenticación sin password/public key"
+msgid "Leave blank for passwordless/public key authentication"
 msgstr "Оставьте пустым при аутентификации открытым ключом или без пароля"
 
-msgid "Redirigir X11"
+msgid "X11 Forwarding"
 msgstr "Проброс X11"
 
-msgid "Usar fuente de ancho fijo por defecto"
+msgid "Use default fixed width font"
 msgstr "Использовать системный моноширинный шрифт"
 
-msgid "Fuente:"
+msgid "Font:"
 msgstr "Шрифт:"
 
-msgid "Comandos personalizados"
+msgid "Custom commands"
 msgstr "Пользовательские команды"
 
-msgid "Duplicar Host"
+msgid "Duplicate Host"
 msgstr "Хост уже существует"
 
-msgid "Reconectar al host"
+msgid "Reconnect to host"
 msgstr "Переподключиться к хосту"
 
-msgid "Clonar consola"
+msgid "Clone console"
 msgstr "клон консоль"
 
-msgid "No hay consolas abiertas"
+msgid "No open consoles"
 msgstr "Нет открытых консолей"
 
-msgid "Copiar selección al portapapeles"
+msgid "Copy selection to clipboard"
 msgstr "Копировать выделение в буфер"
 
-msgid "Enviar comandos a varios hosts al mismo tiempo"
+msgid "Send commands to several hosts at the same time"
 msgstr "Отправить команду одновременно нескольким хостам"
 
 msgid "Cluster"
 msgstr "Кластер"
 
-msgid "Seleccione las consolas a utilizar:"
+msgid "Select consoles to use:"
 msgstr "Выберите консоли:"
 
-msgid "Limpiar selección"
+msgid "Clear selection"
 msgstr "Снять выделение"
 
-msgid "Invertir selección"
+msgid "Invert selection"
 msgstr "Обратить выделение"
 
-msgid "Ingrese el texto a enviar a las consolas: "
+msgid "Enter text to send to hosts: "
 msgstr "Введите текст для отправки хостам: "
 
-msgid "Activar"
-msgstr "Выбрать"
-
-msgid "Salir"
+msgid "Quit"
 msgstr "выходи"
 
-msgid "Copiar y Pegar"
+msgid "Copy and Paste"
 msgstr "Копировать и Вставить"
 
-msgid "_Salir"
+msgid "_Quit"
 msgstr "_выходи"
 
-msgid "Usar formato grupo1/grupo2/grupo3 para crear subgrupos"
+msgid "To create subgroups use format group1/group2/group3"
 msgstr "Чтобы создать подгруппы использовать формат группе1/группе2/группе3"
 
-msgid "Habilitar log"
+msgid "Enable logging"
 msgstr "включить журнал"
 
-msgid "No se puede abrir el archivo de log para escritura"
+msgid "Can't open log file for writting"
 msgstr "Не могу открыть лог-файл для записи"
 
-msgid "Ruta de logs"
+msgid "Logs path"
 msgstr "путь к файлу журнала"
 
-msgid "Clave Privada"
+msgid "Private key"
 msgstr "Закрытый ключ"
 
-msgid "Redirigir Agente"
+msgid "Agent Forwarding"
 msgstr "Проброс агент"
 
-msgid "Habilitar Log"
-msgstr "включить журнал"
-
-msgid "Descripción"
+msgid "Description"
 msgstr "описание"
 
-msgid "Dinámico"
+msgid "Dynamic"
 msgstr "динамик"
 
-msgid "Crear redirección dinámica de puertos"
+msgid "Create dynamic port forwarding"
 msgstr "Создание динамических экспедирование"
 
 msgid ""
-"<span size='smaller'>Usar ##D=milisegundos para introducir un delay.\n"
-"Ej: ##D=1000</span>"
+"<span size='smaller'>Use ##D=milliseconds to insert a delay.\n"
+"Eg: ##D=1000</span>"
 msgstr ""
 "<span size='smaller'>Использование ##D=миллисекунды ввести задержку.\n"
 "например: ##D=1000</span>"
 
-msgid "<span size=\"smaller\">CTRL+UP/CTRL+DOWN para historial</span>"
+msgid "<span size=\"smaller\">CTRL+UP/CTRL+DOWN for history</span>"
 msgstr "<span size=\"smaller\">CTRL+UP/CTRL+DOWN для истории</span>"
 
-msgid "Nunca"
+msgid "Never"
 msgstr "никогда"
 
-msgid "Siempre"
+msgid "Always"
 msgstr "всегда"
 
-msgid "Sólo si no hay errores"
+msgid "Only on clean exit"
 msgstr "только при отсутствии ошибок"
 
-msgid "_Ver"
+msgid "_View"
 msgstr "смотреть"
 
-msgid "Mostrar Toolbar"
+msgid "Show Toolbar"
 msgstr "показать панель инструментов"
 
-msgid "Mostrar Panel"
+msgid "Show Panel"
 msgstr "показать панель"
 
-msgid "Compresión"
+msgid "Compression"
 msgstr "сжатие"
 
 msgid ""
-"Nivel de compresión: \n"
-"blanco: por defecto\n"
+"Compression level: \n"
+"blank: default compression\n"
 "1: min\n"
 "9: max"
 msgstr ""
@@ -460,13 +451,13 @@ msgstr ""
 "1: мин\n"
 "9: макс"
 
-msgid "Opciones extra"
+msgid "Extra arguments"
 msgstr "дополнительные аргументы"
 
-msgid "Parámetros extra a pasar a la línea de comandos"
+msgid "Extra arguments to pass to command line"
 msgstr "дополнительные аргументы для передачи командной строки"
 
-msgid "Sequencias de Teclas:"
+msgid "Key sequences"
 msgstr "ключи последовательности"
 
 msgid "Backspace:"
@@ -475,17 +466,17 @@ msgstr "Backspace:"
 msgid "Delete:"
 msgstr "Delete:"
 
-msgid "Colores y Teclas"
+msgid "Colors and Keys"
 msgstr "цветов и ключи"
 
-msgid "Copiar todo"
+msgid "Copy all"
 msgstr "Копировать всё"
 
-msgid "Abrir consola local al inicio"
+msgid "Open local console on startup"
 msgstr "Открытие локальной консоли при запуске"
 
-msgid "_Editar"
+msgid "_Edit"
 msgstr "_Правка"
 
-msgid "_Servidores"
+msgid "_Servers"
 msgstr "_Хосты"

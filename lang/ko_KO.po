@@ -17,88 +17,82 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Copiar"
+msgid "Copy"
 msgstr "복사하기"
 
-msgid "Pegar"
+msgid "Paste"
 msgstr "붙혀넣기"
 
-msgid "Seleccionar todo"
+msgid "Select all"
 msgstr "모든것 선택하기"
 
-msgid "Guardar buffer en archivo"
+msgid "Save buffer to file"
 msgstr "Save buffer to file"
 
-msgid "Cerrar consola"
+msgid "Close console"
 msgstr "콘솔 닫기"
 
-msgid "Conectar"
+msgid "Connect"
 msgstr "연결하기"
 
-msgid "Agregar Host"
+msgid "Add Host"
 msgstr "호스트 추가하기"
 
-msgid "Editar"
+msgid "Edit"
 msgstr "편집하기"
 
-msgid "Eliminar"
+msgid "Remove"
 msgstr "삭제하기"
 
-msgid "Expandir todo"
+msgid "Expand all"
 msgstr "모든것 확장하기"
 
-msgid "Contraer todo"
+msgid "Collapse all"
 msgstr "모든것 축소하기"
 
-msgid "Error al conectar con servidor"
+msgid "Error connecting to server"
 msgstr "서버 접속에 이상이 있습니다."
 
-msgid "Servidores"
+msgid "Servers"
 msgstr "서버들"
 
-msgid "Entrada invalida en archivo de configuracion"
+msgid "Invalid entry in configuration file"
 msgstr "설정 파일 정보에 이상이 있습니다."
 
-msgid "Guardar como"
+msgid "Save as"
 msgstr "다른이름으로 저장하기"
 
-msgid "No se puede abrir archivo para escritura"
-msgstr "파일을 열수 없습니다."
-
-msgid "Abrir"
+msgid "Open"
 msgstr "열기"
 
-msgid "Hay"
+msgid "There are"
 msgstr "저기요"
 
-msgid "consolas abiertas, confirma que desea salir?"
+msgid "open consoles, exit anyway?"
 msgstr "연결된 콘솔에서 나가게 됩니다?"
 
-msgid "Importar Servidores"
+msgid "Import Servers"
 msgstr "서버목록 들여놓기"
 
-msgid "Ingrese clave: "
+msgid "Enter password"
 msgstr "패스워드를 입력:"
 
-msgid "Clave invalida"
+msgid "Invalid password"
 msgstr "패스워드가 정확하지 않아요"
 
-msgid "Se sobreescribirá la lista de servidores, continuar?"
+msgid "Server list will be overwritten, continue?"
 msgstr "서버 목록이 덮어 쓰여질텐데, 계속하시겠어요?"
 
-msgid "Archivo invalido"
+msgid "Invalid file"
 msgstr "정확하지 않은 파일입니다."
 
-msgid "Exportar Servidores"
+msgid "Export Servers"
 msgstr "서버목록 내보내기"
 
-msgid "Confirma que desea eliminar el host"
-msgstr "호스트 삭제 전 확인 입니다."
-
-msgid "Confirma que desea eliminar todos los hosts del grupo"
+msgid "Do you really want to remove all hosts in group"
 msgstr "그룹에 있는 모든 호스트 삭제 전 확인 입니다.."
 
-msgid "buscar..."
+msgid "search..."
 msgstr "검색..."
 
 msgid "Local"
@@ -107,349 +101,346 @@ msgstr "로컬"
 msgid "Host"
 msgstr "호스트"
 
-msgid "Remoto"
+msgid "Remote"
 msgstr "원격지"
 
-msgid "Importar lista de servidores desde un archivo"
+msgid "Import server list from file"
 msgstr "파일로 부터 서버목록 들여놓기"
 
-msgid "Los campos grupo, nombre y host son obligatorios"
+msgid "Fields group, name and host are required"
 msgstr "구룹 생성을 위해 이름과 호스트를 넣어주세요."
 
-msgid "Puerto invalido"
+msgid "Invalid port"
 msgstr "포트가 부정확합니다."
 
-msgid "El nombre"
+msgid "Host name"
 msgstr "호스트 이름"
 
-msgid "ya existe para el grupo"
+msgid "already exists for group"
 msgstr "구룹이 이미 존재합니다."
 
-msgid "Error al guardar el host. Descripcion"
+msgid "Error saving host. Description"
 msgstr "Error saving host. Description"
 
-msgid "Debe ingresar host remoto"
+msgid "Enter remote host"
 msgstr "원격지 호스트를 입력하세요."
 
-msgid "Puerto local ya fue asignado"
+msgid "Local port already assigned"
 msgstr "Local port already assigned"
 
-msgid "Separador de Palabras"
+msgid "Word separator"
 msgstr "Word separator"
 
-msgid "Tamaño del buffer"
+msgid "Buffer size"
 msgstr "버퍼 크기"
 
-msgid "Transparencia"
+msgid "Transparency"
 msgstr "투명화"
 
-msgid "Pegar con botón derecho"
+msgid "Paste on right click"
 msgstr "오른쪽 클릭으로 붙혀넣습니다."
 
-msgid "Confirmar al cerrar una consola"
+msgid "Confirm on close console"
 msgstr "콘솔 닫인 전 확인"
 
-msgid "Confirmar al salir"
+msgid "Confirm on exit"
 msgstr "종료 시 확인"
 
-msgid "Acción"
+msgid "Show group name in tab"
+msgstr "탭에 그룹 이름 표시"
+
+msgid "Action"
 msgstr "시작"
 
-msgid "Atajo"
+msgid "Shortcut"
 msgstr "단축키"
 
-msgid "Comando"
+msgid "Command"
 msgstr "명령"
 
-msgid "Seleccione el color de fondo"
+msgid "Select background color"
 msgstr "바탕 색깔을 선택하세요"
 
-msgid "Seleccione el color del texto"
+msgid "Select foreground color"
 msgstr "텍스트 색깔을 선택하세요"
 
 #. -- main }
-msgid "A_cerca de"
+msgid "_About"
 msgstr "_About"
 
-msgid "Abrir consola local"
+msgid "Open local console"
 msgstr "로컬 콘솔을 엽니다"
 
-msgid "Agregar"
+msgid "Add"
 msgstr "추가"
 
-msgid "Agregar nuevo host"
+msgid "Add new host"
 msgstr "새로운 호스트 추가"
 
-msgid "Atajos"
+msgid "Shortcuts"
 msgstr "바로가기"
 
-msgid "Ay_uda"
+msgid "_Help"
 msgstr "도움글"
 
-msgid "Color del fondo:"
+msgid "Background color:"
 msgstr "바탕색깔:"
 
-msgid "Color del texto:"
+msgid "Foreground color:"
 msgstr "텍스트 색깔:"
 
-msgid "Colores"
+msgid "Colors"
 msgstr "색깔"
 
-msgid "Comandos"
+msgid "Commands"
 msgstr "명령"
 
-msgid "Comandos Personalizados"
+msgid "Custom Commands"
 msgstr "사용자정의 명령"
 
-msgid "Comandos Predefinidos"
+msgid "Standard Commands"
 msgstr "표준 명령"
 
-msgid "Conectar a host seleccionado o a todos los host del grupo"
+msgid "Connect to selected host or all hosts in selected group"
 msgstr "선택한 호스트에 연결하거나 선택하신 그룹의 모든 호스트에 연결합니다."
 
-msgid "Configuración"
+msgid "Settings"
 msgstr "설정"
 
-msgid "Editar Host"
+msgid "Edit Host"
 msgstr "호스트 편집"
 
-msgid "Editar propiedades de host seleccionado"
+msgid "Edit hosts properties"
 msgstr "선택된 호스트 속성 편집"
 
-msgid "Eliminar host seleccionado"
+msgid "Remove selected host"
 msgstr "선택하신 호스트 삭제"
 
-msgid "Enviar comandos al iniciar sesión"
+msgid "Send commands after login"
 msgstr "로그인 후 전송할 명령"
 
-msgid "Exportar lista de servidores a un archivo"
+msgid "Export server list to file"
 msgstr "서버 목록을 파일로 저장합니다."
 
 msgid "General"
 msgstr "일반"
 
-msgid "Grupo"
+msgid "Group"
 msgstr "그룹"
 
-msgid "Guardar buffer _como"
+msgid "Save buffer as"
 msgstr "Save buffer as"
 
-msgid "Guardar buffer de la consola activa en un archivo"
+msgid "Save active console buffer to file"
 msgstr "Save active console buffer to file"
 
-msgid "Host Remoto"
+msgid "Remote Host"
 msgstr "원격지 호스트"
 
-msgid "Nombre"
+msgid "Name"
 msgstr "이름"
 
 msgid "Password"
 msgstr "암호"
 
-msgid "Propiedades"
+msgid "Properties"
 msgstr "속성"
 
-msgid "Puerto"
+msgid "Port"
 msgstr "포트"
 
-msgid "Puerto Local"
+msgid "Local port"
 msgstr "로컬 포트"
 
-msgid "Puerto Remoto"
+msgid "Remote Port"
 msgstr "원격지 포트"
 
-msgid "Separar consola horizontalmente"
+msgid "Split console horizontally"
 msgstr "콘솔 수평으로 나눕니다."
 
-msgid "Separar consola verticalmente"
+msgid "Split console vertically"
 msgstr "콘솔 수직으로 나눕니다."
 
-msgid "Tipo"
+msgid "Type"
 msgstr "형식"
 
-msgid "Túnel"
+msgid "Tunnel"
 msgstr "Tunnel"
 
-msgid "Unir todas las consolas"
+msgid "Unsplit all consoles"
 msgstr "분리된 콘솔을 되돌립니다."
 
-msgid "Usar colores por defecto"
+msgid "Default colors"
 msgstr "기본 색깔"
 
-msgid "Usuario"
+msgid "User"
 msgstr "사용자"
 
-msgid "_Archivo"
+msgid "_File"
 msgstr "_파일"
 
-msgid "_Exportar servidores"
+msgid "_Export servers"
 msgstr "_서버 내보내기"
 
-msgid "_Importar servidores"
+msgid "_Import servers"
 msgstr "_서버 들여놓기"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-msgid "translator-credits"
+msgid "kuthulu"
 msgstr "번역자 : leejh76@gmail.com"
 
-msgid "Comprobar actualizaciones"
+msgid "Check updates"
 msgstr "업데이트 확인"
 
 msgid ""
 "Hay una nueva version disponible en http://kuthulu.com/gcm/?module=download"
 msgstr "새로운 버전이 있습니다. http://kuthulu.com/gcm/?module=download"
 
-msgid "Renombrar consola"
+msgid "Rename tab"
 msgstr "탭 이름 변경하기"
 
-msgid "Ingrese nuevo nombre"
+msgid "Enter new name"
 msgstr "새로운 이름 입력"
 
-msgid "Copiar Direccion"
+msgid "Copy Address"
 msgstr "주소 복사"
 
 msgid "Keep-Alive"
 msgstr "연결-유지"
 
-msgid "Intervalo en segundos para enviar paquetes keep-alive"
+msgid "Seconds between keep-alive packets"
 msgstr "연결 유지를 위한 패킷 전송 시간(초)"
 
-msgid "Reiniciar consola"
+msgid "Reset console"
 msgstr "콘솔 재시작"
 
-msgid "Reiniciar y Limpiar consola"
+msgid "Reset and Clear console"
 msgstr "콘솔 리셋 및 클리어(Clear)"
 
-msgid "Ocultar botón donar"
+msgid "Hide donate button"
 msgstr "Donate 버턴 숨기기"
 
-msgid "Seleccione la fuente"
+msgid "Select font"
 msgstr "글꼴 선택"
 
-msgid "Dejar en blanco para autenticación sin password/public key"
+msgid "Leave blank for passwordless/public key authentication"
 msgstr "키 인증 후 패스워드를 입력하지 않으시려면 공백으로/공인키"
 
-msgid "Redirigir X11"
+msgid "X11 Forwarding"
 msgstr "X11 포워딩"
 
-msgid "Usar fuente de ancho fijo por defecto"
+msgid "Use default fixed width font"
 msgstr "기본 설정된 글꼴 폭을 사용합니다."
 
-msgid "Fuente:"
+msgid "Font:"
 msgstr "글꼴:"
 
-msgid "Comandos personalizados"
+msgid "Custom commands"
 msgstr "사용자 정의 명령"
 
-msgid "Duplicar Host"
+msgid "Duplicate Host"
 msgstr "중복 호스트"
 
-msgid "Reconectar al host"
+msgid "Reconnect to host"
 msgstr "호스트 재 연결"
 
-msgid "Clonar consola"
+msgid "Clone console"
 msgstr "콘솔 복제"
 
-msgid "No hay consolas abiertas"
+msgid "No open consoles"
 msgstr "열려진 콘솔이 없습니다."
 
-msgid "Copiar selección al portapapeles"
+msgid "Copy selection to clipboard"
 msgstr "선택하신 사항을 클립보드로 복사합니다."
 
-msgid "Enviar comandos a varios hosts al mismo tiempo"
+msgid "Send commands to several hosts at the same time"
 msgstr "동시에 여러 호스트에 명령을 전송합니다."
 
 msgid "Cluster"
 msgstr "클러스터"
 
-msgid "Seleccione las consolas a utilizar:"
+msgid "Select consoles to use:"
 msgstr "사용할 콘솔을 선택하세요:"
 
-msgid "Limpiar selección"
+msgid "Clear selection"
 msgstr "Clear selection"
 
-msgid "Invertir selección"
+msgid "Invert selection"
 msgstr "선택한것 이외의 것"
 
-msgid "Ingrese el texto a enviar a las consolas: "
+msgid "Enter text to send to hosts: "
 msgstr "호스트에게 전송할 텍스트 입력하세요: "
 
-msgid "Activar"
-msgstr "활성화"
-
-msgid "Salir"
+msgid "Quit"
 msgstr "나가기"
 
-msgid "Copiar y Pegar"
+msgid "Copy and Paste"
 msgstr "복사하고 붙혀넣기"
 
-msgid "_Salir"
+msgid "_Quit"
 msgstr "_나가기"
 
-msgid "Usar formato grupo1/grupo2/grupo3 para crear subgrupos"
+msgid "To create subgroups use format group1/group2/group3"
 msgstr "하위 그룹을 만들기 위한 형태는 그룹1/그룹2/그룹3 사용하세요"
 
-msgid "Habilitar log"
+msgid "Enable logging"
 msgstr "로그인 활성화"
 
-msgid "No se puede abrir el archivo de log para escritura"
+msgid "Can't open log file for writting"
 msgstr "로그 작성을 위한 파일이 열수 없습니다."
 
-msgid "Ruta de logs"
+msgid "Logs path"
 msgstr "로그 경로"
 
-msgid "Clave Privada"
+msgid "Private key"
 msgstr "사설키"
 
-msgid "Redirigir Agente"
+msgid "Agent Forwarding"
 msgstr "에이젼트 포워딩"
 
-msgid "Habilitar Log"
-msgstr "로긴 활성화"
-
-msgid "Descripción"
+msgid "Description"
 msgstr "설명"
 
-msgid "Dinámico"
+msgid "Dynamic"
 msgstr "동적"
 
-msgid "Crear redirección dinámica de puertos"
+msgid "Create dynamic port forwarding"
 msgstr "동적 포트 포워딩 생성"
 
 msgid ""
-"<span size='smaller'>Usar ##D=milisegundos para introducir un delay.\n"
-"Ej: ##D=1000</span>"
+"<span size='smaller'>Use ##D=milliseconds to insert a delay.\n"
+"Eg: ##D=1000</span>"
 msgstr ""
 "<span size='smaller'>Use ##D=밀리초로 지연값을 입력하세요.\n"
 "Eg: ##D=1000</span>"
 
-msgid "<span size=\"smaller\">CTRL+UP/CTRL+DOWN para historial</span>"
+msgid "<span size=\"smaller\">CTRL+UP/CTRL+DOWN for history</span>"
 msgstr "<span size=\"smaller\">CTRL+UP/CTRL+DOWN 이력 보기</span>"
 
-msgid "Nunca"
+msgid "Never"
 msgstr "Never"
 
-msgid "Siempre"
+msgid "Always"
 msgstr "항상"
 
-msgid "Sólo si no hay errores"
+msgid "Only on clean exit"
 msgstr "애러가 없을때만"
 
-msgid "_Ver"
+msgid "_View"
 msgstr "_보기"
 
-msgid "Mostrar Toolbar"
+msgid "Show Toolbar"
 msgstr "툴바 보기"
 
-msgid "Mostrar Panel"
+msgid "Show Panel"
 msgstr "판넬 보기"
 
-msgid "Compresión"
+msgid "Compression"
 msgstr "압축하기"
 
 msgid ""
-"Nivel de compresión: \n"
-"blanco: por defecto\n"
+"Compression level: \n"
+"blank: default compression\n"
 "1: min\n"
 "9: max"
 msgstr ""
@@ -458,13 +449,13 @@ msgstr ""
 "1: 분\n"
 "9: 최대"
 
-msgid "Opciones extra"
+msgid "Extra arguments"
 msgstr "추가 옵션"
 
-msgid "Parámetros extra a pasar a la línea de comandos"
+msgid "Extra arguments to pass to command line"
 msgstr "Extra arguments to pass to command line"
 
-msgid "Sequencias de Teclas:"
+msgid "Key sequences"
 msgstr "Key sequences"
 
 msgid "Backspace:"
@@ -473,17 +464,17 @@ msgstr "Backspace:"
 msgid "Delete:"
 msgstr "삭제:"
 
-msgid "Colores y Teclas"
+msgid "Colors and Keys"
 msgstr "색 과 키"
 
-msgid "Copiar todo"
+msgid "Copy all"
 msgstr "모두 복사"
 
-msgid "Abrir consola local al inicio"
+msgid "Open local console on startup"
 msgstr "시작 시 로컬 콘솔을 엽니다"
 
-msgid "_Editar"
+msgid "_Edit"
 msgstr "_편집"
 
-msgid "_Servidores"
+msgid "_Servers"
 msgstr "_서버들"

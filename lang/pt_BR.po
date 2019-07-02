@@ -17,88 +17,82 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Copiar"
+msgid "Copy"
 msgstr "Copiar"
 
-msgid "Pegar"
+msgid "Paste"
 msgstr "Colar"
 
-msgid "Seleccionar todo"
+msgid "Select all"
 msgstr "Selecionar tudo"
 
-msgid "Guardar buffer en archivo"
+msgid "Save buffer to file"
 msgstr "Salvar buffer em arquivo"
 
-msgid "Cerrar consola"
+msgid "Close console"
 msgstr "Fechar console"
 
-msgid "Conectar"
+msgid "Connect"
 msgstr "Conectar"
 
-msgid "Agregar Host"
+msgid "Add Host"
 msgstr "Adicionar Host"
 
-msgid "Editar"
+msgid "Edit"
 msgstr "Editar"
 
-msgid "Eliminar"
+msgid "Remove"
 msgstr "Remover"
 
-msgid "Expandir todo"
+msgid "Expand all"
 msgstr "Expandir tudo"
 
-msgid "Contraer todo"
+msgid "Collapse all"
 msgstr "Contrair tudo"
 
-msgid "Error al conectar con servidor"
+msgid "Error connecting to server"
 msgstr "Erro ao conectar ao servudor"
 
-msgid "Servidores"
+msgid "Servers"
 msgstr "Servidores"
 
-msgid "Entrada invalida en archivo de configuracion"
+msgid "Invalid entry in configuration file"
 msgstr "Entrada inválida no arquivo de configuração"
 
-msgid "Guardar como"
+msgid "Save as"
 msgstr "Salvar como"
 
-msgid "No se puede abrir archivo para escritura"
-msgstr "Não é possível abrir arquivo para gravação"
-
-msgid "Abrir"
+msgid "Open"
 msgstr "Abrir"
 
-msgid "Hay"
+msgid "There are"
 msgstr "Existem"
 
-msgid "consolas abiertas, confirma que desea salir?"
+msgid "open consoles, exit anyway?"
 msgstr "consoles abertas, deseja realmente sair?"
 
-msgid "Importar Servidores"
+msgid "Import Servers"
 msgstr "Importar Servidores"
 
-msgid "Ingrese clave: "
+msgid "Enter password"
 msgstr "Inserir senha: "
 
-msgid "Clave invalida"
+msgid "Invalid password"
 msgstr "Senha inválida"
 
-msgid "Se sobreescribirá la lista de servidores, continuar?"
+msgid "Server list will be overwritten, continue?"
 msgstr "A lista de servidores será sobrescrita, continuar?"
 
-msgid "Archivo invalido"
+msgid "Invalid file"
 msgstr "Arquivo inválido"
 
-msgid "Exportar Servidores"
+msgid "Export Servers"
 msgstr "Exportar Servidores"
 
-msgid "Confirma que desea eliminar el host"
-msgstr "Deseja realmente excluir o host"
-
-msgid "Confirma que desea eliminar todos los hosts del grupo"
+msgid "Do you really want to remove all hosts in group"
 msgstr "Deseja realmente apagar todos os hosts do grupo"
 
-msgid "buscar..."
+msgid "search..."
 msgstr "buscar..."
 
 msgid "Local"
@@ -107,192 +101,195 @@ msgstr "Local"
 msgid "Host"
 msgstr "Host"
 
-msgid "Remoto"
+msgid "Remote"
 msgstr "Remoto"
 
-msgid "Importar lista de servidores desde un archivo"
+msgid "Import server list from file"
 msgstr "Importar lista de servidores de um arquivo"
 
-msgid "Los campos grupo, nombre y host son obligatorios"
+msgid "Fields group, name and host are required"
 msgstr "Os campos grupo, nome e host são obrigatórios"
 
-msgid "Puerto invalido"
+msgid "Invalid port"
 msgstr "Porta inválida"
 
-msgid "El nombre"
+msgid "Host name"
 msgstr "Nome do host"
 
-msgid "ya existe para el grupo"
+msgid "already exists for group"
 msgstr "já existe no grupo"
 
-msgid "Error al guardar el host. Descripcion"
+msgid "Error saving host. Description"
 msgstr "Erro ao salvar o host. Descrição"
 
-msgid "Debe ingresar host remoto"
+msgid "Enter remote host"
 msgstr "Insira o host remoto"
 
-msgid "Puerto local ya fue asignado"
+msgid "Local port already assigned"
 msgstr "Porta local já está atribuída"
 
-msgid "Separador de Palabras"
+msgid "Word separator"
 msgstr "Separador de Palavras"
 
-msgid "Tamaño del buffer"
+msgid "Buffer size"
 msgstr "Tamanho do buffer"
 
-msgid "Transparencia"
+msgid "Transparency"
 msgstr "Transparência"
 
-msgid "Pegar con botón derecho"
+msgid "Paste on right click"
 msgstr "Colar com o botão direito"
 
-msgid "Confirmar al cerrar una consola"
+msgid "Confirm on close console"
 msgstr "Confirmar ao fechar uma console"
 
-msgid "Confirmar al salir"
+msgid "Confirm on exit"
 msgstr "Confirmar ao sair"
 
-msgid "Acción"
+msgid "Show group name in tab"
+msgstr "Mostrar nome do grupo na aba"
+
+msgid "Action"
 msgstr "Ação"
 
-msgid "Atajo"
+msgid "Shortcut"
 msgstr "Atalho"
 
-msgid "Comando"
+msgid "Command"
 msgstr "Comando"
 
-msgid "Seleccione el color de fondo"
+msgid "Select background color"
 msgstr "Selecione a cor de fundo"
 
-msgid "Seleccione el color del texto"
+msgid "Select foreground color"
 msgstr "Selecione a cor do texto"
 
 #. -- main }
-msgid "A_cerca de"
+msgid "_About"
 msgstr "_Sobre"
 
-msgid "Abrir consola local"
+msgid "Open local console"
 msgstr "Abrir console local"
 
-msgid "Agregar"
+msgid "Add"
 msgstr "Adicionar"
 
-msgid "Agregar nuevo host"
+msgid "Add new host"
 msgstr "Adicionar novo host"
 
-msgid "Atajos"
+msgid "Shortcuts"
 msgstr "Atalhos"
 
-msgid "Ay_uda"
+msgid "_Help"
 msgstr "A_juda"
 
-msgid "Color del fondo:"
+msgid "Background color:"
 msgstr "Cor de fundo:"
 
-msgid "Color del texto:"
+msgid "Foreground color:"
 msgstr "Cor do texto:"
 
-msgid "Colores"
+msgid "Colors"
 msgstr "Cores"
 
-msgid "Comandos"
+msgid "Commands"
 msgstr "Comandos"
 
-msgid "Comandos Personalizados"
+msgid "Custom Commands"
 msgstr "Comandos Personalizados"
 
-msgid "Comandos Predefinidos"
+msgid "Standard Commands"
 msgstr "Comandos Predefinidos"
 
-msgid "Conectar a host seleccionado o a todos los host del grupo"
+msgid "Connect to selected host or all hosts in selected group"
 msgstr "Conectar ao host selecionado ou a todos os hosts do grupo selecionado"
 
-msgid "Configuración"
+msgid "Settings"
 msgstr "Configuração"
 
-msgid "Editar Host"
+msgid "Edit Host"
 msgstr "Editar Host"
 
-msgid "Editar propiedades de host seleccionado"
+msgid "Edit hosts properties"
 msgstr "Editar propriedados do host selecionado"
 
-msgid "Eliminar host seleccionado"
+msgid "Remove selected host"
 msgstr "Remover host selecionado"
 
-msgid "Enviar comandos al iniciar sesión"
+msgid "Send commands after login"
 msgstr "Enviar comandos ao iniviar sessão"
 
-msgid "Exportar lista de servidores a un archivo"
+msgid "Export server list to file"
 msgstr "Exportar lista de servidores para um arquivo"
 
 msgid "General"
 msgstr "Geral"
 
-msgid "Grupo"
+msgid "Group"
 msgstr "Grupo"
 
-msgid "Guardar buffer _como"
+msgid "Save buffer as"
 msgstr "Salvar buffer como"
 
-msgid "Guardar buffer de la consola activa en un archivo"
+msgid "Save active console buffer to file"
 msgstr "Salvar buffer do console ativo em um arquivo"
 
-msgid "Host Remoto"
+msgid "Remote Host"
 msgstr "Host Remoto"
 
-msgid "Nombre"
+msgid "Name"
 msgstr "Nome"
 
 msgid "Password"
 msgstr "Senha"
 
-msgid "Propiedades"
+msgid "Properties"
 msgstr "Propriedades"
 
-msgid "Puerto"
+msgid "Port"
 msgstr "Porta"
 
-msgid "Puerto Local"
+msgid "Local port"
 msgstr "Porta Local"
 
-msgid "Puerto Remoto"
+msgid "Remote Port"
 msgstr "Porta Remota"
 
-msgid "Separar consola horizontalmente"
+msgid "Split console horizontally"
 msgstr "Separar console horizontalmente"
 
-msgid "Separar consola verticalmente"
+msgid "Split console vertically"
 msgstr "Separar console verticalmente"
 
-msgid "Tipo"
+msgid "Type"
 msgstr "Tipo"
 
-msgid "Túnel"
+msgid "Tunnel"
 msgstr "Túnel"
 
-msgid "Unir todas las consolas"
+msgid "Unsplit all consoles"
 msgstr "Unir todas as consoles"
 
-msgid "Usar colores por defecto"
+msgid "Default colors"
 msgstr "Cores padrão"
 
-msgid "Usuario"
+msgid "User"
 msgstr "Usuário"
 
-msgid "_Archivo"
+msgid "_File"
 msgstr "_Arquivo"
 
-msgid "_Exportar servidores"
+msgid "_Export servers"
 msgstr "_Exportar servidores"
 
-msgid "_Importar servidores"
+msgid "_Import servers"
 msgstr "_Importar servidores"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-msgid "translator-credits"
+msgid "kuthulu"
 msgstr "E. A. Semchechen"
 
-msgid "Comprobar actualizaciones"
+msgid "Check updates"
 msgstr "Verificar atualizações"
 
 msgid ""
@@ -300,157 +297,151 @@ msgid ""
 msgstr ""
 "Existe uma nova versão disponível em http://kuthulu.com/gcm/?module=download"
 
-msgid "Renombrar consola"
+msgid "Rename tab"
 msgstr "Renomear console"
 
-msgid "Ingrese nuevo nombre"
+msgid "Enter new name"
 msgstr "Inserir novo nome"
 
-msgid "Copiar Direccion"
+msgid "Copy Address"
 msgstr "Copiar Endereço"
 
 msgid "Keep-Alive"
 msgstr "Keep-Alive"
 
-msgid "Intervalo en segundos para enviar paquetes keep-alive"
+msgid "Seconds between keep-alive packets"
 msgstr "Intervalo em segundos entre pacotes keep-alive"
 
-msgid "Reiniciar consola"
+msgid "Reset console"
 msgstr "Redefinir console"
 
-msgid "Reiniciar y Limpiar consola"
+msgid "Reset and Clear console"
 msgstr "Redefinir e Limpar console"
 
-msgid "Ocultar botón donar"
+msgid "Hide donate button"
 msgstr "Ocultar botão de doação"
 
-msgid "Seleccione la fuente"
+msgid "Select font"
 msgstr "Selecionar fonte"
 
-msgid "Dejar en blanco para autenticación sin password/public key"
+msgid "Leave blank for passwordless/public key authentication"
 msgstr "Deixar em branco para autenticação sem senha/chave pública"
 
-msgid "Redirigir X11"
+msgid "X11 Forwarding"
 msgstr "Redirecionamento X11 Forwarding"
 
-msgid "Usar fuente de ancho fijo por defecto"
+msgid "Use default fixed width font"
 msgstr "Usar fonte de largura fixa padrão"
 
-msgid "Fuente:"
+msgid "Font:"
 msgstr "Fonte:"
 
-msgid "Comandos personalizados"
+msgid "Custom commands"
 msgstr "Comandos personalizados"
 
-msgid "Duplicar Host"
+msgid "Duplicate Host"
 msgstr "Duplicar Host"
 
-msgid "Reconectar al host"
+msgid "Reconnect to host"
 msgstr "Reconectar ao host"
 
-msgid "Clonar consola"
+msgid "Clone console"
 msgstr "Clone do console"
 
-msgid "No hay consolas abiertas"
+msgid "No open consoles"
 msgstr "Não existem consoles abertas"
 
-msgid "Copiar selección al portapapeles"
+msgid "Copy selection to clipboard"
 msgstr "copiar seleção para área de transferência"
 
-msgid "Enviar comandos a varios hosts al mismo tiempo"
+msgid "Send commands to several hosts at the same time"
 msgstr "Enviar comandos a vários hosts ao mesmo tempo"
 
 msgid "Cluster"
 msgstr "Cluster"
 
-msgid "Seleccione las consolas a utilizar:"
+msgid "Select consoles to use:"
 msgstr "Selecione as consoles e serem utilizadas:"
 
-msgid "Limpiar selección"
+msgid "Clear selection"
 msgstr "Limpar seleção"
 
-msgid "Invertir selección"
+msgid "Invert selection"
 msgstr "Inverter seleção"
 
-msgid "Ingrese el texto a enviar a las consolas: "
+msgid "Enter text to send to hosts: "
 msgstr "Insira o texto a ser enviado aos hosts: "
 
-msgid "Activar"
-msgstr "Ativar"
-
-msgid "Salir"
+msgid "Quit"
 msgstr "Sair"
 
-msgid "Copiar y Pegar"
+msgid "Copy and Paste"
 msgstr "Copiar e Colar"
 
-msgid "_Salir"
+msgid "_Quit"
 msgstr "_Sair"
 
-msgid "Usar formato grupo1/grupo2/grupo3 para crear subgrupos"
+msgid "To create subgroups use format group1/group2/group3"
 msgstr "Para criar subgrupos usar o formato grupo1/grupo2/grupo3"
 
-msgid "Habilitar log"
+msgid "Enable logging"
 msgstr "Habilitar log"
 
-msgid "No se puede abrir el archivo de log para escritura"
+msgid "Can't open log file for writting"
 msgstr "Não é possível abrir arquivo de log para gravação"
 
-msgid "Ruta de logs"
+msgid "Logs path"
 msgstr "Caminho do logs"
 
-msgid "Clave Privada"
+msgid "Private key"
 msgstr "Chave Privada"
 
-msgid "Redirigir Agente"
+msgid "Agent Forwarding"
 msgstr "Redirecionamento de Agente"
 
-msgid "Habilitar Log"
-msgstr "Habilitar Log"
-
-msgid "Descripción"
+msgid "Description"
 msgstr "Descrição"
 
-msgid "Dinámico"
+msgid "Dynamic"
 msgstr "Dinâmico"
 
-msgid "Crear redirección dinámica de puertos"
+msgid "Create dynamic port forwarding"
 msgstr "Criar redirecionamento de porta dinâmica"
 
 msgid ""
-"<span size='smaller'>Usar ##D=milisegundos para introducir un delay.\n"
-"Ej: ##D=1000</span>"
+"<span size='smaller'>Use ##D=milliseconds to insert a delay.\n"
+"Eg: ##D=1000</span>"
 msgstr ""
 "<span size='smaller'>Use ##D=milissegundos para introduzir um atraso.\n"
 "Ex: ##D=1000</span>"
 
-msgid "<span size=\"smaller\">CTRL+UP/CTRL+DOWN para historial</span>"
+msgid "<span size=\"smaller\">CTRL+UP/CTRL+DOWN for history</span>"
 msgstr "<span size=\"smaller\">CTRL+UP/CTRL+DOWN para a história</span>"
 
-msgid "Nunca"
+msgid "Never"
 msgstr "Nunca"
 
-msgid "Siempre"
+msgid "Always"
 msgstr "Sempre"
 
-msgid "Sólo si no hay errores"
+msgid "Only on clean exit"
 msgstr "Somente se não houver erros"
 
-msgid "_Ver"
+msgid "_View"
 msgstr "Ver"
 
-msgid "Mostrar Toolbar"
+msgid "Show Toolbar"
 msgstr "Mostrar Toolbar"
 
-msgid "Mostrar Panel"
+msgid "Show Panel"
 msgstr "Mostrar Panel"
 
-msgid "Compresión"
+msgid "Compression"
 msgstr "Compressão"
 
 msgid ""
-"Nivel de compresión: \n"
-"blanco: por defecto\n"
+"Compression level: \n"
+"blank: default compression\n"
 "1: min\n"
 "9: max"
 msgstr ""
@@ -459,13 +450,13 @@ msgstr ""
 "1: min\n"
 "9: max"
 
-msgid "Opciones extra"
+msgid "Extra arguments"
 msgstr "Argumentos extras"
 
-msgid "Parámetros extra a pasar a la línea de comandos"
+msgid "Extra arguments to pass to command line"
 msgstr "Argumentos extras para passar a linha de comando"
 
-msgid "Sequencias de Teclas:"
+msgid "Key sequences"
 msgstr "Seqüências de Teclas"
 
 msgid "Backspace:"
@@ -474,17 +465,17 @@ msgstr "Backspace:"
 msgid "Delete:"
 msgstr "Delete:"
 
-msgid "Colores y Teclas"
+msgid "Colors and Keys"
 msgstr "Cores y Teclas"
 
-msgid "Copiar todo"
+msgid "Copy all"
 msgstr "Copiar tudo"
 
-msgid "Abrir consola local al inicio"
+msgid "Open local console on startup"
 msgstr "Abrir console local na inicialização"
 
-msgid "_Editar"
+msgid "_Edit"
 msgstr "_Editar"
 
-msgid "_Servidores"
+msgid "_Servers"
 msgstr "_Servidores"

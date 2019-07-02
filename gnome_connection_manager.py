@@ -1943,7 +1943,7 @@ class Wmain(SimpleGladeApp):
     
     #-- Wmain.on_txtSearch_focus {
     def on_txtSearch_focus(self, widget, *args):
-        if widget.get_text() == _('buscar...'):
+        if widget.get_text() == _('search...'):
             widget.modify_text(gtk.STATE_NORMAL, gtk.gdk.Color('black'))
             widget.set_text('')
     #-- Wmain.on_txtSearch_focus }
@@ -1952,7 +1952,7 @@ class Wmain(SimpleGladeApp):
     def on_txtSearch_focus_out_event(self, widget, *args):
         if widget.get_text() == '':
             widget.modify_text(gtk.STATE_NORMAL, gtk.gdk.Color('darkgray'))
-            widget.set_text(_('buscar...'))
+            widget.set_text(_('search...'))
     #-- Wmain.on_txtSearch_focus_out_event }
 
     #-- Wmain.on_btnSearchBack_clicked {
@@ -2172,7 +2172,7 @@ class Whost(SimpleGladeApp):
         self.treeTunel.append_column( column )        
         column = gtk.TreeViewColumn(_("Host"), gtk.CellRendererText(), text=1)
         self.treeTunel.append_column( column )        
-        column = gtk.TreeViewColumn(_("Remoto"), gtk.CellRendererText(), text=2)
+        column = gtk.TreeViewColumn(_("Remote"), gtk.CellRendererText(), text=2)
         self.treeTunel.append_column( column )        
 
 
@@ -3181,7 +3181,7 @@ class CheckUpdates(Thread):
             if web.getcode()==200:
                 new_version = web.readline().strip()
                 if len(new_version)>0 and new_version != app_version:                                
-                    self.tag = gobject.timeout_add(0, self.msg, "%s\n\nVERSION: %s" % (_("Hay una nueva version disponible en http://kuthulu.com/gcm/?module=download"), new_version), self.parent.get_widget("wMain"))
+                    self.tag = gobject.timeout_add(0, self.msg, "%s\n\nVERSION: %s" % (_("There's a new version available at http://kuthulu.com/gcm/?module=download"), new_version), self.parent.get_widget("wMain"))
         except:            
             pass
 
