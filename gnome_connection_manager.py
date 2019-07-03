@@ -249,24 +249,16 @@ _NEW_LOCAL = "new_local"
 
 ICON_PATH = BASE_PATH + "/icon.png"
 
-PALETTE = [
-    gtk.gdk.Color(red=0x28 / 255.0, green=0x2a / 255.0, blue=0x2e / 255.0),
-    gtk.gdk.Color(red=0xa5 / 255.0, green=0x42 / 255.0, blue=0x42 / 255.0),
-    gtk.gdk.Color(red=0x8c / 255.0, green=0x94 / 255.0, blue=0x40 / 255.0),
-    gtk.gdk.Color(red=0xde / 255.0, green=0x93 / 255.0, blue=0x5f / 255.0),
-    gtk.gdk.Color(red=0x3f / 255.0, green=0x61 / 255.0, blue=0x9d / 255.0),
-    gtk.gdk.Color(red=0x85 / 255.0, green=0x67 / 255.0, blue=0x8f / 255.0),
-    gtk.gdk.Color(red=0x5e / 255.0, green=0x8d / 255.0, blue=0x87 / 255.0),
-    gtk.gdk.Color(red=0xa0 / 255.0, green=0xa8 / 255.0, blue=0xb0 / 255.0),
-    gtk.gdk.Color(red=0x37 / 255.0, green=0x3b / 255.0, blue=0x41 / 255.0),
-    gtk.gdk.Color(red=0xcc / 255.0, green=0x66 / 255.0, blue=0x66 / 255.0),
-    gtk.gdk.Color(red=0xb5 / 255.0, green=0xbd / 255.0, blue=0x68 / 255.0),
-    gtk.gdk.Color(red=0xf0 / 255.0, green=0xc6 / 255.0, blue=0x74 / 255.0),
-    gtk.gdk.Color(red=0x61 / 255.0, green=0x82 / 255.0, blue=0xbe / 255.0),
-    gtk.gdk.Color(red=0xb2 / 255.0, green=0x94 / 255.0, blue=0xbb / 255.0),
-    gtk.gdk.Color(red=0x8a / 255.0, green=0xbe / 255.0, blue=0xb7 / 255.0),
-    gtk.gdk.Color(red=0xe5 / 255.0, green=0xe8 / 255.0, blue=0xe6 / 255.0),
-]
+DARCULA_PALETTE = [
+    gtk.gdk.Color('#2C2C2C'),  # background (fairly black)
+    gtk.gdk.Color('#DA4939'),  # red
+    gtk.gdk.Color('#519F50'),  # green
+    gtk.gdk.Color('#FFC66D'),  # orange
+    gtk.gdk.Color('#6272a4'),  # blue
+    gtk.gdk.Color('#FF79C6'),  # pink
+    gtk.gdk.Color('#8BE9FD'),  # cyan
+    gtk.gdk.Color('#E6E1DC')  # foreground (fairly white)
+] * 2
 
 glade_dir = ""
 locale_dir = BASE_PATH + "/lang"
@@ -285,8 +277,9 @@ class conf():
     STARTUP_LOCAL=True
     CONFIRM_ON_EXIT=True
     SHOW_GROUP_NAME_IN_TAB=False
-    FONT_COLOR = ""
-    BACK_COLOR = ""
+    FONT_COLOR = "#e6e6e6"
+    BACK_COLOR = None
+    USE_DARCULA = False
     TRANSPARENCY = 0
     PASTE_ON_RIGHT_CLICK = 1
     CONFIRM_ON_CLOSE_TAB = 0
@@ -1076,18 +1069,20 @@ class Wmain(SimpleGladeApp):
                 os.environ['TERM'] = v.get_emulation()
             
             if isinstance(host, basestring):
-                host = Host('', host) 
-            
-            fcolor = host.font_color
-            bcolor = host.back_color
-            if fcolor == '' or fcolor == None or bcolor == '' or bcolor == None:
-                fcolor = conf.FONT_COLOR
-                bcolor = conf.BACK_COLOR
-                
-            if len(fcolor)>0 and len(bcolor)>0:
-                v.set_colors(gtk.gdk.Color(fcolor), gtk.gdk.Color(bcolor), [])
+                host = Host('', host)
+
+            palette = []
+            if host.font_color and host.back_color:
+                fcolor = gtk.gdk.Color(host.font_color)
+                bcolor = gtk.gdk.Color(host.back_color)
+            elif conf.USE_DARCULA:
+                fcolor = DARCULA_PALETTE[7]
+                bcolor = DARCULA_PALETTE[0]
+                palette = DARCULA_PALETTE
             else:
-                v.set_colors(gtk.gdk.Color(red=0.9,blue=0.9,green=0.9), gtk.gdk.Color(red=0.0,blue=0.0,green=0.0), PALETTE)
+                fcolor = gtk.gdk.Color(conf.FONT_COLOR)
+                bcolor = gtk.gdk.Color(conf.BACK_COLOR)
+            v.set_colors(fcolor, bcolor, palette)
 
             if len(conf.FONT)==0:
                 conf.FONT = 'monospace'
@@ -1275,8 +1270,9 @@ class Wmain(SimpleGladeApp):
             conf.BUFFER_LINES = cp.getint("options", "buffer-lines")
             conf.CONFIRM_ON_EXIT = cp.getboolean("options", "confirm-exit")
             conf.SHOW_GROUP_NAME_IN_TAB = cp.getboolean("options", "show-group-name-in-tab")
-            conf.FONT_COLOR = cp.get("options", "font-color")
-            conf.BACK_COLOR = cp.get("options", "back-color")
+            conf.FONT_COLOR = cp.get("options", "font-color") or conf.FONT_COLOR
+            conf.BACK_COLOR = cp.get("options", "back-color") or conf.BACK_COLOR
+            conf.USE_DARCULA = cp.getboolean("options", "use-darcula")
             conf.TRANSPARENCY = cp.getint("options", "transparency")
             conf.PASTE_ON_RIGHT_CLICK = cp.getboolean("options", "paste-right-click")
             conf.CONFIRM_ON_CLOSE_TAB = cp.getboolean("options", "confirm-close-tab")
@@ -1499,8 +1495,9 @@ class Wmain(SimpleGladeApp):
         cp.set("options", "startup-local", conf.STARTUP_LOCAL)
         cp.set("options", "confirm-exit", conf.CONFIRM_ON_EXIT)
         cp.set("options", "show-group-name-in-tab", conf.SHOW_GROUP_NAME_IN_TAB)
-        cp.set("options", "font-color", conf.FONT_COLOR)
-        cp.set("options", "back-color", conf.BACK_COLOR)
+        cp.set("options", "font-color", conf.FONT_COLOR or '')
+        cp.set("options", "back-color", conf.BACK_COLOR or '')
+        cp.set("options", "use-darcula", conf.USE_DARCULA)
         cp.set("options", "transparency", conf.TRANSPARENCY)        
         cp.set("options", "paste-right-click", conf.PASTE_ON_RIGHT_CLICK)
         cp.set("options", "confirm-close-tab", conf.CONFIRM_ON_CLOSE_TAB)
@@ -2641,6 +2638,8 @@ class Wconfig(SimpleGladeApp):
             self.btnBColor.set_sensitive(True)
             fcolor=conf.FONT_COLOR
             bcolor=conf.BACK_COLOR            
+        
+        self.get_widget("chkUseDarcula").set_active(conf.USE_DARCULA)
  
         self.btnFColor.set_color(gtk.gdk.Color(fcolor))
         self.btnBColor.set_color(gtk.gdk.Color(bcolor))
@@ -2786,6 +2785,8 @@ class Wconfig(SimpleGladeApp):
                 else:
                     value = '"%s"' % (obj.get_text())
                 exec("%s=%s" % (obj.field, value))
+        
+        conf.USE_DARCULA = self.get_widget('chkUseDarcula').get_active()
         
         if self.get_widget("chkDefaultColors").get_active():
             conf.FONT_COLOR=""

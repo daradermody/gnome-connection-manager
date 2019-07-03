@@ -335,6 +335,9 @@ msgstr "기본 설정된 글꼴 폭을 사용합니다."
 msgid "Font:"
 msgstr "글꼴:"
 
+msgid "Use Darcula theme"
+msgstr "Darcula 테마 사용"
+
 msgid "Custom commands"
 msgstr "사용자 정의 명령"
 

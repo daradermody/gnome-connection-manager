@@ -336,6 +336,9 @@ msgstr "Usar fonte de largura fixa padrão"
 msgid "Font:"
 msgstr "Fonte:"
 
+msgid "Use Darcula theme"
+msgstr "Use o tema de Darcula"
+
 msgid "Custom commands"
 msgstr "Comandos personalizados"
 

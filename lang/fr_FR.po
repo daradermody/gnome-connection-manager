@@ -338,6 +338,9 @@ msgstr "Utilisation police à chasse fixe par défaut"
 msgid "Font:"
 msgstr "Police:"
 
+msgid "Use Darcula theme"
+msgstr "Utilisez le thème de Darcula"
+
 msgid "Custom commands"
 msgstr "Commandes personnalisées"
 

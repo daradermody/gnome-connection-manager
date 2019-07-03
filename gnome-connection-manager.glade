@@ -3305,35 +3305,30 @@ if not, write to the Free Software Foundation, Inc.,
 	    <widget class="GtkTable" id="table6">
 	      <property name="border_width">1</property>
 	      <property name="visible">True</property>
-	      <property name="n_rows">6</property>
+	      <property name="n_rows">7</property>
 	      <property name="n_columns">2</property>
 	      <property name="homogeneous">False</property>
 	      <property name="row_spacing">0</property>
 	      <property name="column_spacing">0</property>
 
 	      <child>
-		<widget class="GtkLabel" id="label33">
+		<widget class="GtkCheckButton" id="chkDefaultColors">
 		  <property name="visible">True</property>
-		  <property name="label" translatable="yes">Background color:</property>
-		  <property name="use_underline">False</property>
-		  <property name="use_markup">False</property>
-		  <property name="justify">GTK_JUSTIFY_LEFT</property>
-		  <property name="wrap">False</property>
-		  <property name="selectable">False</property>
-		  <property name="xalign">0</property>
-		  <property name="yalign">0.5</property>
-		  <property name="xpad">0</property>
-		  <property name="ypad">0</property>
-		  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-		  <property name="width_chars">-1</property>
-		  <property name="single_line_mode">False</property>
-		  <property name="angle">0</property>
+		  <property name="can_focus">True</property>
+		  <property name="label" translatable="yes">Default colors</property>
+		  <property name="use_underline">True</property>
+		  <property name="relief">GTK_RELIEF_NORMAL</property>
+		  <property name="focus_on_click">True</property>
+		  <property name="active">True</property>
+		  <property name="inconsistent">False</property>
+		  <property name="draw_indicator">True</property>
+		  <signal name="toggled" handler="on_chkDefaultColors_toggled" last_modification_time="Thu, 06 Aug 2009 21:46:34 GMT"/>
 		</widget>
 		<packing>
 		  <property name="left_attach">0</property>
-		  <property name="right_attach">1</property>
-		  <property name="top_attach">2</property>
-		  <property name="bottom_attach">3</property>
+		  <property name="right_attach">2</property>
+		  <property name="top_attach">0</property>
+		  <property name="bottom_attach">1</property>
 		  <property name="x_options">fill</property>
 		  <property name="y_options"></property>
 		</packing>
@@ -3368,26 +3363,6 @@ if not, write to the Free Software Foundation, Inc.,
 	      </child>
 
 	      <child>
-		<widget class="GtkColorButton" id="btnBColor">
-		  <property name="visible">True</property>
-		  <property name="can_focus">True</property>
-		  <property name="use_underline">True</property>
-		  <property name="relief">GTK_RELIEF_NORMAL</property>
-		  <property name="focus_on_click">True</property>
-          <property name="title" translatable="yes">Select background color</property>
-		  <signal name="color-set" handler="on_btnBColor_clicked" last_modification_time="Thu, 06 Aug 2009 22:11:19 GMT"/>
-		</widget>
-		<packing>
-		  <property name="left_attach">1</property>
-		  <property name="right_attach">2</property>
-		  <property name="top_attach">2</property>
-		  <property name="bottom_attach">3</property>
-		  <property name="x_options">fill</property>
-		  <property name="y_options"></property>
-		</packing>
-	      </child>
-
-	      <child>
 		<widget class="GtkColorButton" id="btnFColor">
 		  <property name="visible">True</property>
 		  <property name="can_focus">True</property>
@@ -3408,23 +3383,48 @@ if not, write to the Free Software Foundation, Inc.,
 	      </child>
 
 	      <child>
-		<widget class="GtkCheckButton" id="chkDefaultColors">
+		<widget class="GtkLabel" id="label33">
 		  <property name="visible">True</property>
-		  <property name="can_focus">True</property>
-		  <property name="label" translatable="yes">Default colors</property>
-		  <property name="use_underline">True</property>
-		  <property name="relief">GTK_RELIEF_NORMAL</property>
-		  <property name="focus_on_click">True</property>
-		  <property name="active">True</property>
-		  <property name="inconsistent">False</property>
-		  <property name="draw_indicator">True</property>
-		  <signal name="toggled" handler="on_chkDefaultColors_toggled" last_modification_time="Thu, 06 Aug 2009 21:46:34 GMT"/>
+		  <property name="label" translatable="yes">Background color:</property>
+		  <property name="use_underline">False</property>
+		  <property name="use_markup">False</property>
+		  <property name="justify">GTK_JUSTIFY_LEFT</property>
+		  <property name="wrap">False</property>
+		  <property name="selectable">False</property>
+		  <property name="xalign">0</property>
+		  <property name="yalign">0.5</property>
+		  <property name="xpad">0</property>
+		  <property name="ypad">0</property>
+		  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+		  <property name="width_chars">-1</property>
+		  <property name="single_line_mode">False</property>
+		  <property name="angle">0</property>
 		</widget>
 		<packing>
 		  <property name="left_attach">0</property>
+		  <property name="right_attach">1</property>
+		  <property name="top_attach">2</property>
+		  <property name="bottom_attach">3</property>
+		  <property name="x_options">fill</property>
+		  <property name="y_options"></property>
+		</packing>
+	      </child>
+
+	      <child>
+		<widget class="GtkColorButton" id="btnBColor">
+		  <property name="visible">True</property>
+		  <property name="can_focus">True</property>
+		  <property name="use_underline">True</property>
+		  <property name="relief">GTK_RELIEF_NORMAL</property>
+		  <property name="focus_on_click">True</property>
+          <property name="title" translatable="yes">Select background color</property>
+		  <signal name="color-set" handler="on_btnBColor_clicked" last_modification_time="Thu, 06 Aug 2009 22:11:19 GMT"/>
+		</widget>
+		<packing>
+		  <property name="left_attach">1</property>
 		  <property name="right_attach">2</property>
-		  <property name="top_attach">0</property>
-		  <property name="bottom_attach">1</property>
+		  <property name="top_attach">2</property>
+		  <property name="bottom_attach">3</property>
 		  <property name="x_options">fill</property>
 		  <property name="y_options"></property>
 		</packing>
@@ -3498,6 +3498,28 @@ if not, write to the Free Software Foundation, Inc.,
 		  <property name="right_attach">2</property>
 		  <property name="top_attach">5</property>
 		  <property name="bottom_attach">6</property>
+		  <property name="x_options">fill</property>
+		  <property name="y_options"></property>
+		</packing>
+	      </child>
+
+	      <child>
+		<widget class="GtkCheckButton" id="chkUseDarcula">
+		  <property name="visible">True</property>
+		  <property name="can_focus">True</property>
+		  <property name="label" translatable="yes">Use Darcula theme</property>
+		  <property name="use_underline">True</property>
+		  <property name="relief">GTK_RELIEF_NORMAL</property>
+		  <property name="focus_on_click">True</property>
+		  <property name="active">False</property>
+		  <property name="inconsistent">False</property>
+		  <property name="draw_indicator">True</property>
+		</widget>
+		<packing>
+		  <property name="left_attach">0</property>
+		  <property name="right_attach">2</property>
+		  <property name="top_attach">6</property>
+		  <property name="bottom_attach">7</property>
 		  <property name="x_options">fill</property>
 		  <property name="y_options"></property>
 		</packing>

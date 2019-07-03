@@ -334,6 +334,9 @@ msgstr "Use default fixed width font"
 msgid "Font:"
 msgstr "Font:"
 
+msgid "Use Darcula theme"
+msgstr "Use Darcula theme"
+
 msgid "Custom commands"
 msgstr "Custom commands"
 

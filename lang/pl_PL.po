@@ -335,6 +335,9 @@ msgstr "Użyj domyślnej szerokość czcionki"
 msgid "Font:"
 msgstr "Czcionka:"
 
+msgid "Use Darcula theme"
+msgstr "Użyj motywu Darcula"
+
 msgid "Custom commands"
 msgstr "Dowolne polecenia"
 

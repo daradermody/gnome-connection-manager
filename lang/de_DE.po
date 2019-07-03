@@ -337,6 +337,9 @@ msgstr "Verwenden der Standard-Festbreitenschrift."
 msgid "Font:"
 msgstr "Schrift:"
 
+msgid "Use Darcula theme"
+msgstr "Verwenden Sie das Darcula-Thema"
+
 msgid "Custom commands"
 msgstr "Benutzerdefinierte Befehle"
 

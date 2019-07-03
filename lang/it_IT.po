@@ -338,6 +338,9 @@ msgstr "Usa il carattere predefinito a larghezza fissa"
 msgid "Font:"
 msgstr "Carattere:"
 
+msgid "Use Darcula theme"
+msgstr "Usa il tema Darcula"
+
 msgid "Custom commands"
 msgstr "Comandi personalizzati"
 
