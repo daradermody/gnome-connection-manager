@@ -176,7 +176,7 @@ try:
     import vte
 except:
     error = gtk.MessageDialog (None, gtk.DIALOG_MODAL, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK,
-      'You must install libvte for python')
+      'You must install libvte for python. If installing on Ubuntu 19.04+, see the README')
     error.run()
     sys.exit (1)
 
