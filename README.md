@@ -78,6 +78,11 @@ Because python-vte is [not available in 19.04+](https://www.mail-archive.com/des
 - [libvte9 (0.28.2-5ubuntu5)](https://packages.ubuntu.com/cosmic/libvte9)
 - [python-vte (0.28.2-5ubuntu5)](https://packages.ubuntu.com/cosmic/python-vte)
 
+You should also run the following to prevent these libraries from being automatically uninstalled the next time you upgrade your packages:
+```bash
+sudo apt-mark hold libvte9 python-vte libvte-common
+```
+
 If anyone knows enough about python-vte and GObject Introspection, their advice or contribution on switching would be immensely appreciated.
 
 # Note about the author
