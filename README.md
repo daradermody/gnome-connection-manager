@@ -1,3 +1,5 @@
+# For use with Ubuntu 19+, use the [owner's version](https://github.com/kuthulux/gnome-connection-manager) which is now hosted on GitHub.
+
 # Fork of mjun
 This is an attempt to centralise all the contributions made by people to the now abandoned [gnome-connection-manager](https://github.com/mjun/gnome-connection-manager) repo. See [here](https://github.com/mjun/gnome-connection-manager/compare/master...daradermody:master) for a list of updates. All credit goes to authors of the respective commits.
 
@@ -43,10 +45,10 @@ Once you have dependencies installed, it's as simple as placing gnome-connection
 python gnome_connection_manager.py
 ```
 
-The application will read your `LANG` environment variable and load appropriate translation file (if your language is 
+The application will read your `LANG` environment variable and load appropriate translation file (if your language is
 supported), otherwise it will fallback to english.
 
-If you want to start gnome-connection-manager with specific language start it with LANGUAGE parameter followed by language code, 
+If you want to start gnome-connection-manager with specific language start it with LANGUAGE parameter followed by language code,
 like so:
 
 ```shell
